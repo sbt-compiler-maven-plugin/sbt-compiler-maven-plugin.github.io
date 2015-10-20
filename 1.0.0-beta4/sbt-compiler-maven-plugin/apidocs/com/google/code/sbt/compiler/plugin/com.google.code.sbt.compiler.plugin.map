@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="c0" href="./SBTTestCompileMojo.html" title="com.google.code.sbt.compiler.plugin.SBTTestCompileMojo" alt="" coords="16,113,155,137"/>
+<area shape="rect" id="node1" href="./SBTTestCompileMojo.html" title="&lt;TABLE&gt;" alt="" coords="5,101,165,149"/>
+<area shape="rect" id="c1" href="./SBTCompileMojo.html" title="com.google.code.sbt.compiler.plugin.SBTCompileMojo" alt="" coords="200,113,315,137"/>
+<area shape="rect" id="node2" href="./SBTCompileMojo.html" title="&lt;TABLE&gt;" alt="" coords="189,101,325,149"/>
+<area shape="rect" id="c2" href="./SBTAddScalaSourcesMojo.html" title="com.google.code.sbt.compiler.plugin.SBTAddScalaSourcesMojo" alt="" coords="296,17,461,41"/>
+<area shape="rect" id="node3" href="./SBTAddScalaSourcesMojo.html" title="&lt;TABLE&gt;" alt="" coords="285,5,472,53"/>
+<area shape="rect" id="c3" href="./SBTAddManagedSourcesMojo.html" title="com.google.code.sbt.compiler.plugin.SBTAddManagedSourcesMojo" alt="" coords="506,17,691,41"/>
+<area shape="rect" id="node4" href="./SBTAddManagedSourcesMojo.html" title="&lt;TABLE&gt;" alt="" coords="496,5,701,53"/>
+<area shape="rect" id="c4" href="./MavenCompilerLogger.html" title="com.google.code.sbt.compiler.plugin.MavenCompilerLogger" alt="" coords="736,17,880,41"/>
+<area shape="rect" id="node5" href="./MavenCompilerLogger.html" title="&lt;TABLE&gt;" alt="" coords="725,5,891,53"/>
+<area shape="rect" id="c5" href="./AbstractSBTCompileMojo.html" title="com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo" alt="" coords="91,17,251,41"/>
+<area shape="rect" id="node6" href="./AbstractSBTCompileMojo.html" title="&lt;TABLE&gt;" alt="" coords="80,5,261,53"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="c119" href="./SBTTestCompileMojo.html" title="&lt;TABLE&gt;" alt="" coords="16,216,155,240"/>
+<area shape="rect" id="c121" href="./SBTCompileMojo.html" title="&lt;TABLE&gt;" alt="" coords="200,216,315,240"/>
+<area shape="rect" id="c126" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/Artifact.html" title="&lt;TABLE&gt;" alt="" coords="245,312,374,363"/>
+<area shape="rect" id="c124" href="./AbstractSBTCompileMojo.html" title="&lt;TABLE&gt;" alt="" coords="395,113,554,137"/>
+<area shape="rect" id="c127" href="http://maven.apache.org/ref/2.2.1/maven-project/apidocs/org/apache/maven/project/MavenProject.html" title="&lt;TABLE&gt;" alt="" coords="411,210,539,246"/>
+<area shape="rect" id="c128" href="http://maven.apache.org/ref/2.2.1/maven-project/apidocs/org/apache/maven/project/MavenProjectBuilder.html" title="&lt;TABLE&gt;" alt="" coords="584,203,715,253"/>
+<area shape="rect" id="c129" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/factory/ArtifactFactory.html" title="&lt;TABLE&gt;" alt="" coords="759,203,923,253"/>
+<area shape="rect" id="c130" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/resolver/ArtifactResolver.html" title="&lt;TABLE&gt;" alt="" coords="967,203,1134,253"/>
+<area shape="rect" id="c131" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/repository/ArtifactRepository.html" title="&lt;TABLE&gt;" alt="" coords="1178,203,1353,253"/>
+<area shape="rect" id="c125" href="http://maven.apache.org/ref/2.2.1/maven-plugin-api/apidocs/org/apache/maven/plugin/AbstractMojo.html" title="&lt;TABLE&gt;" alt="" coords="413,11,537,47"/>
+</map>

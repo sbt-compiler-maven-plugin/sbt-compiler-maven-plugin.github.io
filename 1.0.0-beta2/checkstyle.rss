@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>SBT Compiler Maven Plugin - Checkstyle report</title>
+    <link>https://sbt-compiler-maven-plugin.googlecode.com/svn/mavensite/1.0.0-beta2/</link>
+    <description>SBT Compiler Maven Plugin - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2013</copyright>
+    <item>
+      <title>File: 5,
+             Errors: 5,
+             Warnings: 6,
+             Infos: 0
+      </title>
+            <link>https://sbt-compiler-maven-plugin.googlecode.com/svn/mavensite/1.0.0-beta2//checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://sbt-compiler-maven-plugin.googlecode.com/svn/mavensite/1.0.0-beta2//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://sbt-compiler-maven-plugin.googlecode.com/svn/mavensite/1.0.0-beta2//checkstyle.html#com.google.code.sbt.SBTAddScalaSourcesMojo.java">com/google/code/sbt/SBTAddScalaSourcesMojo.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://sbt-compiler-maven-plugin.googlecode.com/svn/mavensite/1.0.0-beta2//checkstyle.html#com.google.code.sbt.SBTLogger.java">com/google/code/sbt/SBTLogger.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://sbt-compiler-maven-plugin.googlecode.com/svn/mavensite/1.0.0-beta2//checkstyle.html#com.google.code.sbt.SBTTestCompileMojo.java">com/google/code/sbt/SBTTestCompileMojo.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://sbt-compiler-maven-plugin.googlecode.com/svn/mavensite/1.0.0-beta2//checkstyle.html#com.google.code.sbt.SBTCompileMojo.java">com/google/code/sbt/SBTCompileMojo.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://sbt-compiler-maven-plugin.googlecode.com/svn/mavensite/1.0.0-beta2//checkstyle.html#com.google.code.sbt.AbstractSBTCompileMojo.java">com/google/code/sbt/AbstractSBTCompileMojo.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+
