@@ -120,9 +120,9 @@
                     
       <li>
   
-                          <a href="integration.html" title="Continuous Integration">
+                          <a href="integration.html" title="CI Management">
           <span class="none"></span>
-        Continuous Integration</a>
+        CI Management</a>
             </li>
                     
       <li class="active">
@@ -153,16 +153,16 @@
                     
       <li>
   
-                          <a href="issue-tracking.html" title="Issue Tracking">
+                          <a href="issue-tracking.html" title="Issue Management">
           <span class="none"></span>
-        Issue Tracking</a>
+        Issue Management</a>
             </li>
                     
       <li>
   
-                          <a href="license.html" title="Project License">
+                          <a href="license.html" title="Licenses">
           <span class="none"></span>
-        Project License</a>
+        Licenses</a>
             </li>
                     
       <li>
@@ -181,30 +181,30 @@
                     
       <li>
   
-                          <a href="plugins.html" title="Project Plugins">
+                          <a href="plugins.html" title="Plugins">
           <span class="none"></span>
-        Project Plugins</a>
+        Plugins</a>
             </li>
                     
       <li>
   
-                          <a href="team-list.html" title="Project Team">
+                          <a href="team-list.html" title="Team">
           <span class="none"></span>
-        Project Team</a>
+        Team</a>
             </li>
                     
       <li>
   
-                          <a href="source-repository.html" title="Source Repository">
+                          <a href="source-repository.html" title="Source Code Management">
           <span class="none"></span>
-        Source Repository</a>
+        Source Code Management</a>
             </li>
                     
       <li>
   
-                          <a href="project-summary.html" title="Project Summary">
+                          <a href="project-summary.html" title="Summary">
           <span class="none"></span>
-        Project Summary</a>
+        Summary</a>
             </li>
               </ul>
         </li>
@@ -241,7 +241,7 @@
 <th>ArtifactId</th>
 <th>Version</th>
 <th>Type</th>
-<th>License</th></tr>
+<th>Licenses</th></tr>
 <tr class="b">
 <td>com.google.code.sbt-compiler-maven-plugin</td>
 <td><a class="externalLink" href="https://sbt-compiler-maven-plugin.github.io/sbt-compiler-api/">sbt-compiler-api</a></td>
@@ -258,8 +258,9 @@
 <h2><a name="Project_Transitive_Dependencies"></a>Project Transitive Dependencies</h2>
 <p>No transitive dependencies are required for this project.</p></div><a name="Project_Dependency_Graph"></a>
 <div class="section">
-<h2><a name="Project_Dependency_Graph"></a>Project Dependency Graph</h2><script language="javascript" type="text/javascript">
-      function toggleDependencyDetail( divId, imgId )
+<h2><a name="Project_Dependency_Graph"></a>Project Dependency Graph</h2>
+<script language="javascript" type="text/javascript">
+      function toggleDependencyDetails( divId, imgId )
       {
         var div = document.getElementById( divId );
         var img = document.getElementById( imgId );
@@ -267,11 +268,13 @@
         {
           div.style.display = 'none';
           img.src='./images/icon_info_sml.gif';
+          img.alt='[Information]';
         }
         else
         {
           div.style.display = '';
           img.src='./images/close.gif';
+          img.alt='[Close]';
         }
       }
 </script>
@@ -279,7 +282,7 @@
 <div class="section">
 <h3><a name="Dependency_Tree"></a>Dependency Tree</h3>
 <ul>
-<li>com.google.code.sbt-compiler-maven-plugin:sbt-compilers:pom:1.0.0-beta8-SNAPSHOT <img id="_img1" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep0', '_img1' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep0" style="display:none">
+<li>com.google.code.sbt-compiler-maven-plugin:sbt-compilers:pom:1.0.0-beta8-SNAPSHOT <img id="_img1" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep0', '_img1' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep0" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>SBT Compilers</th></tr>
@@ -287,9 +290,9 @@
 <td>
 <p><b>Description: </b>SBT Compilers</p>
 <p><b>URL: </b><a class="externalLink" href="https://sbt-compiler-maven-plugin.github.io/sbt-compilers/">https://sbt-compiler-maven-plugin.github.io/sbt-compilers/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div>
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div>
 <ul>
-<li>com.google.code.sbt-compiler-maven-plugin:sbt-compiler-api:jar:1.0.0-beta8-SNAPSHOT (provided) <img id="_img3" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep2', '_img3' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep2" style="display:none">
+<li>com.google.code.sbt-compiler-maven-plugin:sbt-compiler-api:jar:1.0.0-beta8-SNAPSHOT (provided) <img id="_img3" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep2', '_img3' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep2" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>SBT Compiler API</th></tr>
@@ -297,8 +300,8 @@
 <td>
 <p><b>Description: </b>SBT Compiler API</p>
 <p><b>URL: </b><a class="externalLink" href="https://sbt-compiler-maven-plugin.github.io/sbt-compiler-api/">https://sbt-compiler-maven-plugin.github.io/sbt-compiler-api/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
-<li>org.codehaus.plexus:plexus-component-annotations:jar:1.6 (provided) <img id="_img5" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep4', '_img5' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep4" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
+<li>org.codehaus.plexus:plexus-component-annotations:jar:1.6 (provided) <img id="_img5" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep4', '_img5' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep4" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>Plexus :: Component Annotations</th></tr>
@@ -307,7 +310,7 @@
 <p><b>Description: </b>Plexus Component &quot;Java 5&quot; Annotations, to describe plexus components properties in java sources with
     standard annotations instead of javadoc annotations.</p>
 <p><b>URL: </b><a class="externalLink" href="http://plexus.codehaus.org/plexus-containers/plexus-component-annotations/">http://plexus.codehaus.org/plexus-containers/plexus-component-annotations/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li></ul></li></ul></div></div><a name="Licenses"></a>
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li></ul></li></ul></div></div><a name="Licenses"></a>
 <div class="section">
 <h2><a name="Licenses"></a>Licenses</h2>
 <p><b>The Apache Software License, Version 2.0: </b>Plexus :: Component Annotations, SBT Compiler API, SBT Compilers</p></div><a name="Dependency_File_Details"></a>
@@ -324,7 +327,7 @@
 <th title="Indicates whether these dependencies have been compiled with debug information.">Debug Information</th></tr>
 <tr class="b">
 <td>sbt-compiler-api-1.0.0-beta8-SNAPSHOT.jar</td>
-<td>9.56 kB</td>
+<td>9.6 kB</td>
 <td>21</td>
 <td>8</td>
 <td>1</td>
@@ -332,7 +335,7 @@
 <td>Yes</td></tr>
 <tr class="a">
 <td>plexus-component-annotations-1.6.jar</td>
-<td>4.26 kB</td>
+<td>4.3 kB</td>
 <td>15</td>
 <td>3</td>
 <td>1</td>
@@ -348,7 +351,7 @@
 <th>Debug Information</th></tr>
 <tr class="a">
 <td>2</td>
-<td>13.83 kB</td>
+<td>13.8 kB</td>
 <td>36</td>
 <td>11</td>
 <td>2</td>
@@ -356,7 +359,7 @@
 <td>1</td></tr>
 <tr class="b">
 <td>provided: 2</td>
-<td>provided: 13.83 kB</td>
+<td>provided: 13.8 kB</td>
 <td>provided: 36</td>
 <td>provided: 11</td>
 <td>provided: 2</td>

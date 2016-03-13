@@ -119,9 +119,9 @@
                     
       <li>
   
-                          <a href="integration.html" title="Continuous Integration">
+                          <a href="integration.html" title="CI Management">
           <span class="none"></span>
-        Continuous Integration</a>
+        CI Management</a>
             </li>
                     
       <li class="active">
@@ -152,16 +152,16 @@
                     
       <li>
   
-                          <a href="issue-tracking.html" title="Issue Tracking">
+                          <a href="issue-tracking.html" title="Issue Management">
           <span class="none"></span>
-        Issue Tracking</a>
+        Issue Management</a>
             </li>
                     
       <li>
   
-                          <a href="license.html" title="Project License">
+                          <a href="license.html" title="Licenses">
           <span class="none"></span>
-        Project License</a>
+        Licenses</a>
             </li>
                     
       <li>
@@ -173,30 +173,30 @@
                     
       <li>
   
-                          <a href="plugins.html" title="Project Plugins">
+                          <a href="plugins.html" title="Plugins">
           <span class="none"></span>
-        Project Plugins</a>
+        Plugins</a>
             </li>
                     
       <li>
   
-                          <a href="team-list.html" title="Project Team">
+                          <a href="team-list.html" title="Team">
           <span class="none"></span>
-        Project Team</a>
+        Team</a>
             </li>
                     
       <li>
   
-                          <a href="source-repository.html" title="Source Repository">
+                          <a href="source-repository.html" title="Source Code Management">
           <span class="none"></span>
-        Source Repository</a>
+        Source Code Management</a>
             </li>
                     
       <li>
   
-                          <a href="project-summary.html" title="Project Summary">
+                          <a href="project-summary.html" title="Summary">
           <span class="none"></span>
-        Project Summary</a>
+        Summary</a>
             </li>
               </ul>
         </li>
@@ -240,7 +240,7 @@
 <th>ArtifactId</th>
 <th>Version</th>
 <th>Type</th>
-<th>License</th></tr>
+<th>Licenses</th></tr>
 <tr class="b">
 <td>com.typesafe.zinc</td>
 <td><a class="externalLink" href="https://github.com/typesafehub/zinc">zinc</a></td>
@@ -256,7 +256,7 @@
 <th>ArtifactId</th>
 <th>Version</th>
 <th>Type</th>
-<th>License</th></tr>
+<th>Licenses</th></tr>
 <tr class="b">
 <td>com.google.code.sbt-compiler-maven-plugin</td>
 <td><a class="externalLink" href="https://sbt-compiler-maven-plugin.github.io/sbt-compiler-api/">sbt-compiler-api</a></td>
@@ -282,7 +282,7 @@
 <th>Version</th>
 <th>Classifier</th>
 <th>Type</th>
-<th>License</th></tr>
+<th>Licenses</th></tr>
 <tr class="b">
 <td>com.typesafe.sbt</td>
 <td><a class="externalLink" href="http://www.scala-sbt.org/">compiler-interface</a></td>
@@ -326,8 +326,9 @@
 <td>jar</td>
 <td><a class="externalLink" href="http://www.scala-lang.org/downloads/license.html">BSD-like</a></td></tr></table></div></div><a name="Project_Dependency_Graph"></a>
 <div class="section">
-<h2><a name="Project_Dependency_Graph"></a>Project Dependency Graph</h2><script language="javascript" type="text/javascript">
-      function toggleDependencyDetail( divId, imgId )
+<h2><a name="Project_Dependency_Graph"></a>Project Dependency Graph</h2>
+<script language="javascript" type="text/javascript">
+      function toggleDependencyDetails( divId, imgId )
       {
         var div = document.getElementById( divId );
         var img = document.getElementById( imgId );
@@ -335,11 +336,13 @@
         {
           div.style.display = 'none';
           img.src='./images/icon_info_sml.gif';
+          img.alt='[Information]';
         }
         else
         {
           div.style.display = '';
           img.src='./images/close.gif';
+          img.alt='[Close]';
         }
       }
 </script>
@@ -347,7 +350,7 @@
 <div class="section">
 <h3><a name="Dependency_Tree"></a>Dependency Tree</h3>
 <ul>
-<li>com.google.code.sbt-compiler-maven-plugin:sbt-compiler-sbt013:jar:1.0.0-beta8-SNAPSHOT <img id="_img1" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep0', '_img1' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep0" style="display:none">
+<li>com.google.code.sbt-compiler-maven-plugin:sbt-compiler-sbt013:jar:1.0.0-beta8-SNAPSHOT <img id="_img1" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep0', '_img1' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep0" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>SBT Compiler for SBT 0.13</th></tr>
@@ -355,9 +358,9 @@
 <td>
 <p><b>Description: </b>SBT Compiler for SBT 0.13</p>
 <p><b>URL: </b><a class="externalLink" href="https://sbt-compiler-maven-plugin.github.io/sbt-compilers/sbt-compiler-sbt013/">https://sbt-compiler-maven-plugin.github.io/sbt-compilers/sbt-compiler-sbt013/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div>
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div>
 <ul>
-<li>com.typesafe.zinc:zinc:jar:0.3.9 (compile) <img id="_img3" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep2', '_img3' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep2" style="display:none">
+<li>com.typesafe.zinc:zinc:jar:0.3.9 (compile) <img id="_img3" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep2', '_img3' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep2" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>zinc</th></tr>
@@ -365,9 +368,9 @@
 <td>
 <p><b>Description: </b>zinc</p>
 <p><b>URL: </b><a class="externalLink" href="https://github.com/typesafehub/zinc">https://github.com/typesafehub/zinc</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2</a></p></td></tr></table></div>
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2</a></p></td></tr></table></div>
 <ul>
-<li>org.scala-lang:scala-library:jar:2.10.5 (compile) <img id="_img5" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep4', '_img5' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep4" style="display:none">
+<li>org.scala-lang:scala-library:jar:2.10.5 (compile) <img id="_img5" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep4', '_img5' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep4" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>Scala Library</th></tr>
@@ -375,8 +378,8 @@
 <td>
 <p><b>Description: </b>Standard library for the Scala Programming Language</p>
 <p><b>URL: </b><a class="externalLink" href="http://www.scala-lang.org/">http://www.scala-lang.org/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.scala-lang.org/downloads/license.html">BSD-like</a></p></td></tr></table></div></li>
-<li>com.typesafe.sbt:incremental-compiler:jar:0.13.9 (compile) <img id="_img7" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep6', '_img7' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep6" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.scala-lang.org/downloads/license.html">BSD-like</a></p></td></tr></table></div></li>
+<li>com.typesafe.sbt:incremental-compiler:jar:0.13.9 (compile) <img id="_img7" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep6', '_img7' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep6" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>incremental-compiler</th></tr>
@@ -384,9 +387,9 @@
 <td>
 <p><b>Description: </b>incremental-compiler</p>
 <p><b>URL: </b><a class="externalLink" href="http://www.scala-sbt.org/">http://www.scala-sbt.org/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/bsd-license.php">BSD-style</a></p></td></tr></table></div>
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.opensource.org/licenses/bsd-license.php">BSD-style</a></p></td></tr></table></div>
 <ul>
-<li>org.scala-lang:scala-compiler:jar:2.10.5 (compile) <img id="_img9" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep8', '_img9' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep8" style="display:none">
+<li>org.scala-lang:scala-compiler:jar:2.10.5 (compile) <img id="_img9" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep8', '_img9' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep8" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>Scala Compiler</th></tr>
@@ -394,9 +397,9 @@
 <td>
 <p><b>Description: </b>Compiler for the Scala Programming Language</p>
 <p><b>URL: </b><a class="externalLink" href="http://www.scala-lang.org/">http://www.scala-lang.org/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.scala-lang.org/downloads/license.html">BSD-like</a></p></td></tr></table></div>
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.scala-lang.org/downloads/license.html">BSD-like</a></p></td></tr></table></div>
 <ul>
-<li>org.scala-lang:scala-reflect:jar:2.10.5 (compile) <img id="_img11" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep10', '_img11' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep10" style="display:none">
+<li>org.scala-lang:scala-reflect:jar:2.10.5 (compile) <img id="_img11" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep10', '_img11' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep10" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>Scala Compiler</th></tr>
@@ -404,8 +407,8 @@
 <td>
 <p><b>Description: </b>Compiler for the Scala Programming Language</p>
 <p><b>URL: </b><a class="externalLink" href="http://www.scala-lang.org/">http://www.scala-lang.org/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.scala-lang.org/downloads/license.html">BSD-like</a></p></td></tr></table></div></li></ul></li>
-<li>com.typesafe.sbt:sbt-interface:jar:0.13.9 (compile) <img id="_img13" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep12', '_img13' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep12" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.scala-lang.org/downloads/license.html">BSD-like</a></p></td></tr></table></div></li></ul></li>
+<li>com.typesafe.sbt:sbt-interface:jar:0.13.9 (compile) <img id="_img13" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep12', '_img13' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep12" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>sbt-interface</th></tr>
@@ -413,8 +416,8 @@
 <td>
 <p><b>Description: </b>sbt-interface</p>
 <p><b>URL: </b><a class="externalLink" href="http://www.scala-sbt.org/">http://www.scala-sbt.org/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/bsd-license.php">BSD-style</a></p></td></tr></table></div></li></ul></li>
-<li>com.typesafe.sbt:compiler-interface:jar:sources:0.13.9 (compile) <img id="_img15" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep14', '_img15' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep14" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.opensource.org/licenses/bsd-license.php">BSD-style</a></p></td></tr></table></div></li></ul></li>
+<li>com.typesafe.sbt:compiler-interface:jar:sources:0.13.9 (compile) <img id="_img15" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep14', '_img15' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep14" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>compiler-interface</th></tr>
@@ -422,8 +425,8 @@
 <td>
 <p><b>Description: </b>compiler-interface</p>
 <p><b>URL: </b><a class="externalLink" href="http://www.scala-sbt.org/">http://www.scala-sbt.org/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/bsd-license.php">BSD-style</a></p></td></tr></table></div></li></ul></li>
-<li>com.google.code.sbt-compiler-maven-plugin:sbt-compiler-api:jar:1.0.0-beta8-SNAPSHOT (provided) <img id="_img17" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep16', '_img17' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep16" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.opensource.org/licenses/bsd-license.php">BSD-style</a></p></td></tr></table></div></li></ul></li>
+<li>com.google.code.sbt-compiler-maven-plugin:sbt-compiler-api:jar:1.0.0-beta8-SNAPSHOT (provided) <img id="_img17" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep16', '_img17' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep16" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>SBT Compiler API</th></tr>
@@ -431,8 +434,8 @@
 <td>
 <p><b>Description: </b>SBT Compiler API</p>
 <p><b>URL: </b><a class="externalLink" href="https://sbt-compiler-maven-plugin.github.io/sbt-compiler-api/">https://sbt-compiler-maven-plugin.github.io/sbt-compiler-api/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
-<li>org.codehaus.plexus:plexus-component-annotations:jar:1.6 (provided) <img id="_img19" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep18', '_img19' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep18" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
+<li>org.codehaus.plexus:plexus-component-annotations:jar:1.6 (provided) <img id="_img19" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep18', '_img19' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep18" style="display:none">
 <table border="0" class="table table-striped">
 <tr class="a">
 <th>Plexus :: Component Annotations</th></tr>
@@ -441,7 +444,7 @@
 <p><b>Description: </b>Plexus Component &quot;Java 5&quot; Annotations, to describe plexus components properties in java sources with
     standard annotations instead of javadoc annotations.</p>
 <p><b>URL: </b><a class="externalLink" href="http://plexus.codehaus.org/plexus-containers/plexus-component-annotations/">http://plexus.codehaus.org/plexus-containers/plexus-component-annotations/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li></ul></li></ul></div></div><a name="Licenses"></a>
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li></ul></li></ul></div></div><a name="Licenses"></a>
 <div class="section">
 <h2><a name="Licenses"></a>Licenses</h2>
 <p><b>Apache 2: </b>zinc</p>
@@ -461,7 +464,7 @@
 <th title="Indicates whether these dependencies have been compiled with debug information.">Debug Information</th></tr>
 <tr class="b">
 <td>sbt-compiler-api-1.0.0-beta8-SNAPSHOT.jar</td>
-<td>9.56 kB</td>
+<td>9.6 kB</td>
 <td>21</td>
 <td>8</td>
 <td>1</td>
@@ -469,7 +472,7 @@
 <td>Yes</td></tr>
 <tr class="a">
 <td>compiler-interface-0.13.9-sources.jar</td>
-<td>30.39 kB</td>
+<td>30.4 kB</td>
 <td>19</td>
 <td>0</td>
 <td>0</td>
@@ -477,7 +480,7 @@
 <td>No</td></tr>
 <tr class="b">
 <td>incremental-compiler-0.13.9.jar</td>
-<td>2.43 MB</td>
+<td>2.4 MB</td>
 <td>1985</td>
 <td>1936</td>
 <td>19</td>
@@ -485,7 +488,7 @@
 <td>Yes</td></tr>
 <tr class="a">
 <td>sbt-interface-0.13.9.jar</td>
-<td>52.85 kB</td>
+<td>52.8 kB</td>
 <td>93</td>
 <td>88</td>
 <td>3</td>
@@ -493,7 +496,7 @@
 <td>Yes</td></tr>
 <tr class="b">
 <td>zinc-0.3.9.jar</td>
-<td>392.95 kB</td>
+<td>393 kB</td>
 <td>248</td>
 <td>243</td>
 <td>1</td>
@@ -501,7 +504,7 @@
 <td>Yes</td></tr>
 <tr class="a">
 <td>plexus-component-annotations-1.6.jar</td>
-<td>4.26 kB</td>
+<td>4.3 kB</td>
 <td>15</td>
 <td>3</td>
 <td>1</td>
@@ -509,7 +512,7 @@
 <td>No</td></tr>
 <tr class="b">
 <td>scala-compiler-2.10.5.jar</td>
-<td>14.47 MB</td>
+<td>14.5 MB</td>
 <td>8758</td>
 <td>8612</td>
 <td>60</td>
@@ -517,7 +520,7 @@
 <td>Yes</td></tr>
 <tr class="a">
 <td>scala-library-2.10.5.jar</td>
-<td>7.13 MB</td>
+<td>7.1 MB</td>
 <td>4965</td>
 <td>4901</td>
 <td>59</td>
@@ -525,7 +528,7 @@
 <td>Yes</td></tr>
 <tr class="b">
 <td>scala-reflect-2.10.5.jar</td>
-<td>3.21 MB</td>
+<td>3.2 MB</td>
 <td>2051</td>
 <td>2037</td>
 <td>10</td>
@@ -541,7 +544,7 @@
 <th>Debug Information</th></tr>
 <tr class="b">
 <td>9</td>
-<td>27.73 MB</td>
+<td>27.7 MB</td>
 <td>18155</td>
 <td>17828</td>
 <td>154</td>
@@ -549,7 +552,7 @@
 <td>7</td></tr>
 <tr class="a">
 <td>compile: 7</td>
-<td>compile: 27.71 MB</td>
+<td>compile: 27.7 MB</td>
 <td>compile: 18119</td>
 <td>compile: 17817</td>
 <td>compile: 152</td>
@@ -557,7 +560,7 @@
 <td>compile: 6</td></tr>
 <tr class="b">
 <td>provided: 2</td>
-<td>provided: 13.83 kB</td>
+<td>provided: 13.8 kB</td>
 <td>provided: 36</td>
 <td>provided: 11</td>
 <td>provided: 2</td>
