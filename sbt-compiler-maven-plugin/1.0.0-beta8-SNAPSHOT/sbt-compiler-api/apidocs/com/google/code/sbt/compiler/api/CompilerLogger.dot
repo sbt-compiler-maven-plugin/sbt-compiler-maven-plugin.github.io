@@ -10,19 +10,19 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// com.google.code.sbt.compiler.api.CompilerLogger
-	c73 [label=<<table title="com.google.code.sbt.compiler.api.CompilerLogger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./CompilerLogger.html">
+	c100 [label=<<table title="com.google.code.sbt.compiler.api.CompilerLogger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./CompilerLogger.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> CompilerLogger </td></tr>
 		</table></td></tr>
 		</table>>, URL="./CompilerLogger.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.sbt.compiler.api.CompilerConfiguration
-	c75 [label=<<table title="com.google.code.sbt.compiler.api.CompilerConfiguration" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CompilerConfiguration.html">
+	c102 [label=<<table title="com.google.code.sbt.compiler.api.CompilerConfiguration" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CompilerConfiguration.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> CompilerConfiguration </td></tr>
 		</table></td></tr>
 		</table>>, URL="./CompilerConfiguration.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.sbt.compiler.api.CompilerConfiguration NAVASSOC com.google.code.sbt.compiler.api.CompilerLogger
-	c75:p -> c73:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c102:p -> c100:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

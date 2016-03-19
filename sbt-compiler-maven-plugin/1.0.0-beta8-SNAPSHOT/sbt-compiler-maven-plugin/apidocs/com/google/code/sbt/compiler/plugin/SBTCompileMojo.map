@@ -1,8 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="c105" href="./SBTCompileMojo.html" title="com.google.code.sbt.compiler.plugin.SBTCompileMojo" alt="" coords="16,113,131,137"/>
+<area shape="rect" id="c114" href="./SBTCompileMojo.html" title="com.google.code.sbt.compiler.plugin.SBTCompileMojo" alt="" coords="16,113,131,137"/>
 <area shape="rect" id="node1" href="./SBTCompileMojo.html" title="&lt;TABLE&gt;" alt="" coords="5,101,141,149"/>
-<area shape="rect" id="c110" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/Artifact.html" title="org.apache.maven.artifact.Artifact" alt="" coords="61,203,190,253"/>
+<area shape="rect" id="c119" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/Artifact.html" title="org.apache.maven.artifact.Artifact" alt="" coords="61,203,190,253"/>
 <area shape="rect" id="node5" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/Artifact.html" title="&lt;TABLE&gt;" alt="" coords="51,197,200,259"/>
-<area shape="rect" id="c109" href="./AbstractSBTCompileMojo.html" title="com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo" alt="" coords="45,17,205,41"/>
+<area shape="rect" id="c118" href="./AbstractSBTCompileMojo.html" title="com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo" alt="" coords="45,17,205,41"/>
 <area shape="rect" id="node2" href="./AbstractSBTCompileMojo.html" title="&lt;TABLE&gt;" alt="" coords="35,5,216,53"/>
 </map>

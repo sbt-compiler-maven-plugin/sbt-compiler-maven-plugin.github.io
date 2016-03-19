@@ -303,6 +303,11 @@
 </a>
 <h2 class="title">M</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/plugin/SourcePositionMapperAggregator.html#map-com.google.code.sbt.compiler.api.SourcePosition-">map(SourcePosition)</a></span> - Method in class com.google.code.sbt.compiler.plugin.<a href="com/google/code/sbt/compiler/plugin/SourcePositionMapperAggregator.html" title="class in com.google.code.sbt.compiler.plugin">SourcePositionMapperAggregator</a></dt>
+<dd>
+<div class="block">Performs mapping from the position in generated source file to the position in original source file it was
+ generated from.</div>
+</dd>
 <dt><a href="com/google/code/sbt/compiler/plugin/MavenCompilerLogger.html" title="class in com.google.code.sbt.compiler.plugin"><span class="typeNameLink">MavenCompilerLogger</span></a> - Class in <a href="com/google/code/sbt/compiler/plugin/package-summary.html">com.google.code.sbt.compiler.plugin</a></dt>
 <dd>
 <div class="block">Maven <a href="http://maven.apache.org/ref/2.2.1/maven-plugin-api/apidocs/org/apache/maven/plugin/logging/Log.html?is-external=true" title="class or interface in org.apache.maven.plugin.logging"><code>Log</code></a> wrapper implementing <a href="https://sbt-compiler-maven-plugin.github.io/sbt-compiler-maven-plugin/1.0.0-beta8-SNAPSHOT/sbt-compiler-api/apidocs/com/google/code/sbt/compiler/api/CompilerLogger.html?is-external=true" title="class or interface in com.google.code.sbt.compiler.api"><code>CompilerLogger</code></a> interface.</div>
@@ -401,6 +406,10 @@
 <dd>
 <div class="block">Forced Scala version.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/plugin/SourcePositionMapperAggregator.html#setCharsetName-java.lang.String-">setCharsetName(String)</a></span> - Method in class com.google.code.sbt.compiler.plugin.<a href="com/google/code/sbt/compiler/plugin/SourcePositionMapperAggregator.html" title="class in com.google.code.sbt.compiler.plugin">SourcePositionMapperAggregator</a></dt>
+<dd>
+<div class="block">Sets source files character set name (encoding).</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/plugin/SBTCompileMojo.html#skipMain">skipMain</a></span> - Variable in class com.google.code.sbt.compiler.plugin.<a href="com/google/code/sbt/compiler/plugin/SBTCompileMojo.html" title="class in com.google.code.sbt.compiler.plugin">SBTCompileMojo</a></dt>
 <dd>
 <div class="block">Set this to <code>true</code> to bypass compilation of main sources.</div>
@@ -412,6 +421,18 @@
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/plugin/AbstractSBTCompileMojo.html#sourceEncoding">sourceEncoding</a></span> - Variable in class com.google.code.sbt.compiler.plugin.<a href="com/google/code/sbt/compiler/plugin/AbstractSBTCompileMojo.html" title="class in com.google.code.sbt.compiler.plugin">AbstractSBTCompileMojo</a></dt>
 <dd>
 <div class="block">Scala and Java source files encoding.</div>
+</dd>
+<dt><a href="com/google/code/sbt/compiler/plugin/SourcePositionMapperAggregator.html" title="class in com.google.code.sbt.compiler.plugin"><span class="typeNameLink">SourcePositionMapperAggregator</span></a> - Class in <a href="com/google/code/sbt/compiler/plugin/package-summary.html">com.google.code.sbt.compiler.plugin</a></dt>
+<dd>
+<div class="block">...</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/plugin/SourcePositionMapperAggregator.html#SourcePositionMapperAggregator-java.util.Collection-">SourcePositionMapperAggregator(Collection&lt;SourcePositionMapper&gt;)</a></span> - Constructor for class com.google.code.sbt.compiler.plugin.<a href="com/google/code/sbt/compiler/plugin/SourcePositionMapperAggregator.html" title="class in com.google.code.sbt.compiler.plugin">SourcePositionMapperAggregator</a></dt>
+<dd>
+<div class="block">Creates source position mappers aggregator.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/plugin/AbstractSBTCompileMojo.html#sourcePositionMappers">sourcePositionMappers</a></span> - Variable in class com.google.code.sbt.compiler.plugin.<a href="com/google/code/sbt/compiler/plugin/AbstractSBTCompileMojo.html" title="class in com.google.code.sbt.compiler.plugin">AbstractSBTCompileMojo</a></dt>
+<dd>
+<div class="block">Source position mappers.</div>
 </dd>
 </dl>
 <a name="I:T">
@@ -450,6 +471,10 @@
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/plugin/AbstractSBTCompileMojo.html#Z:Z_scalacPlugins">_scalacPlugins</a></span> - Variable in class com.google.code.sbt.compiler.plugin.<a href="com/google/code/sbt/compiler/plugin/AbstractSBTCompileMojo.html" title="class in com.google.code.sbt.compiler.plugin">AbstractSBTCompileMojo</a></dt>
 <dd>
 <div class="block">Scala compiler plugins.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/plugin/AbstractSBTCompileMojo.html#Z:Z_sourcePositionMappers">_sourcePositionMappers</a></span> - Variable in class com.google.code.sbt.compiler.plugin.<a href="com/google/code/sbt/compiler/plugin/AbstractSBTCompileMojo.html" title="class in com.google.code.sbt.compiler.plugin">AbstractSBTCompileMojo</a></dt>
+<dd>
+<div class="block">Source position mappers.</div>
 </dd>
 </dl>
 <a href="#I:A">A</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:J">J</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a href="#I:W">W</a>&nbsp;<a href="#I:Z:Z_">_</a>&nbsp;</div>

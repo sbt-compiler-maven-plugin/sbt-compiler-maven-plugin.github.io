@@ -10,57 +10,57 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// com.google.code.sbt.compiler.plugin.SBTTestCompileMojo
-	c24 [label=<<table title="com.google.code.sbt.compiler.plugin.SBTTestCompileMojo" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SBTTestCompileMojo.html">
+	c29 [label=<<table title="com.google.code.sbt.compiler.plugin.SBTTestCompileMojo" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SBTTestCompileMojo.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SBTTestCompileMojo </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SBTTestCompileMojo.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.sbt.compiler.plugin.SBTCompileMojo
-	c26 [label=<<table title="com.google.code.sbt.compiler.plugin.SBTCompileMojo" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SBTCompileMojo.html">
+	c31 [label=<<table title="com.google.code.sbt.compiler.plugin.SBTCompileMojo" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SBTCompileMojo.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SBTCompileMojo </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SBTCompileMojo.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo
-	c36 [label=<<table title="com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./AbstractSBTCompileMojo.html">
+	c41 [label=<<table title="com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./AbstractSBTCompileMojo.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="arial italic"> AbstractSBTCompileMojo </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./AbstractSBTCompileMojo.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	//com.google.code.sbt.compiler.plugin.SBTTestCompileMojo extends com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo
-	c36:p -> c24:p [dir=back,arrowtail=empty];
+	c41:p -> c29:p [dir=back,arrowtail=empty];
 	//com.google.code.sbt.compiler.plugin.SBTCompileMojo extends com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo
-	c36:p -> c26:p [dir=back,arrowtail=empty];
+	c41:p -> c31:p [dir=back,arrowtail=empty];
 	//com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo extends org.apache.maven.plugin.AbstractMojo
-	c39:p -> c36:p [dir=back,arrowtail=empty];
+	c44:p -> c41:p [dir=back,arrowtail=empty];
 	// com.google.code.sbt.compiler.plugin.SBTCompileMojo NAVASSOC org.apache.maven.artifact.Artifact
-	c26:p -> c46:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c31:p -> c51:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo NAVASSOC org.apache.maven.project.MavenProject
-	c36:p -> c71:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c41:p -> c76:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo NAVASSOC org.apache.maven.project.MavenProject
-	c36:p -> c71:p [taillabel="", label="", headlabel="*", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c41:p -> c76:p [taillabel="", label="", headlabel="*", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo NAVASSOC org.apache.maven.artifact.factory.ArtifactFactory
-	c36:p -> c72:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c41:p -> c77:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo NAVASSOC org.apache.maven.artifact.resolver.ArtifactResolver
-	c36:p -> c73:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c41:p -> c78:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo NAVASSOC org.apache.maven.artifact.repository.ArtifactRepository
-	c36:p -> c75:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c41:p -> c80:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo NAVASSOC org.apache.maven.artifact.repository.ArtifactRepository
-	c36:p -> c75:p [taillabel="", label="", headlabel="*", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c41:p -> c80:p [taillabel="", label="", headlabel="*", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo NAVASSOC org.apache.maven.artifact.metadata.ArtifactMetadataSource
-	c36:p -> c76:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c41:p -> c81:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo NAVASSOC com.google.code.sbt.compiler.api.Compiler
-	c36:p -> c77:p [taillabel="", label="", headlabel="*", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
-	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo DEPEND org.apache.maven.artifact.Artifact
-	c36:p -> c46:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
-	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo DEPEND com.google.code.sbt.compiler.api.Compiler
-	c36:p -> c77:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
-	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo DEPEND org.apache.maven.artifact.resolver.filter.ArtifactFilter
-	c36:p -> c78:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	c41:p -> c82:p [taillabel="", label="", headlabel="*", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo DEPEND org.apache.maven.project.MavenProject
-	c36:p -> c71:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	c41:p -> c76:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo DEPEND com.google.code.sbt.compiler.api.Compiler
+	c41:p -> c82:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo DEPEND org.apache.maven.artifact.Artifact
+	c41:p -> c51:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo DEPEND org.apache.maven.artifact.resolver.filter.ArtifactFilter
+	c41:p -> c83:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// org.apache.maven.artifact.metadata.ArtifactMetadataSource
-	c76 [label=<<table title="org.apache.maven.artifact.metadata.ArtifactMetadataSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/metadata/ArtifactMetadataSource.html">
+	c81 [label=<<table title="org.apache.maven.artifact.metadata.ArtifactMetadataSource" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/metadata/ArtifactMetadataSource.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ArtifactMetadataSource </td></tr>
@@ -68,7 +68,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/metadata/ArtifactMetadataSource.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// org.apache.maven.artifact.resolver.ArtifactResolver
-	c73 [label=<<table title="org.apache.maven.artifact.resolver.ArtifactResolver" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/resolver/ArtifactResolver.html">
+	c78 [label=<<table title="org.apache.maven.artifact.resolver.ArtifactResolver" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/resolver/ArtifactResolver.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ArtifactResolver </td></tr>
@@ -76,7 +76,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/resolver/ArtifactResolver.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// org.apache.maven.artifact.resolver.filter.ArtifactFilter
-	c78 [label=<<table title="org.apache.maven.artifact.resolver.filter.ArtifactFilter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/resolver/filter/ArtifactFilter.html">
+	c83 [label=<<table title="org.apache.maven.artifact.resolver.filter.ArtifactFilter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/resolver/filter/ArtifactFilter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ArtifactFilter </td></tr>
@@ -84,14 +84,14 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/resolver/filter/ArtifactFilter.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// org.apache.maven.project.MavenProject
-	c71 [label=<<table title="org.apache.maven.project.MavenProject" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/2.2.1/maven-project/apidocs/org/apache/maven/project/MavenProject.html">
+	c76 [label=<<table title="org.apache.maven.project.MavenProject" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/2.2.1/maven-project/apidocs/org/apache/maven/project/MavenProject.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> MavenProject </td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> org.apache.maven.project </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="http://maven.apache.org/ref/2.2.1/maven-project/apidocs/org/apache/maven/project/MavenProject.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.sbt.compiler.api.Compiler
-	c77 [label=<<table title="com.google.code.sbt.compiler.api.Compiler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c82 [label=<<table title="com.google.code.sbt.compiler.api.Compiler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Compiler </td></tr>
@@ -99,7 +99,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
 	// org.apache.maven.artifact.factory.ArtifactFactory
-	c72 [label=<<table title="org.apache.maven.artifact.factory.ArtifactFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/factory/ArtifactFactory.html">
+	c77 [label=<<table title="org.apache.maven.artifact.factory.ArtifactFactory" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/factory/ArtifactFactory.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ArtifactFactory </td></tr>
@@ -107,7 +107,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/factory/ArtifactFactory.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// org.apache.maven.artifact.repository.ArtifactRepository
-	c75 [label=<<table title="org.apache.maven.artifact.repository.ArtifactRepository" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/repository/ArtifactRepository.html">
+	c80 [label=<<table title="org.apache.maven.artifact.repository.ArtifactRepository" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/repository/ArtifactRepository.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ArtifactRepository </td></tr>
@@ -115,7 +115,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/repository/ArtifactRepository.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// org.apache.maven.artifact.Artifact
-	c46 [label=<<table title="org.apache.maven.artifact.Artifact" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/Artifact.html">
+	c51 [label=<<table title="org.apache.maven.artifact.Artifact" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/Artifact.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Artifact </td></tr>
@@ -123,7 +123,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/Artifact.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// org.apache.maven.plugin.AbstractMojo
-	c39 [label=<<table title="org.apache.maven.plugin.AbstractMojo" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/2.2.1/maven-plugin-api/apidocs/org/apache/maven/plugin/AbstractMojo.html">
+	c44 [label=<<table title="org.apache.maven.plugin.AbstractMojo" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/2.2.1/maven-plugin-api/apidocs/org/apache/maven/plugin/AbstractMojo.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="arial italic"> AbstractMojo </font></td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> org.apache.maven.plugin </font></td></tr>

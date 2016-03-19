@@ -68,7 +68,7 @@
 <!--   -->
 </a></div>
 <!-- ========= END OF TOP NAVBAR ========= -->
-<div class="contentContainer"><a href="#I:A">A</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:W">W</a>&nbsp;<a name="I:A">
+<div class="contentContainer"><a href="#I:A">A</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:W">W</a>&nbsp;<a name="I:A">
 <!--   -->
 </a>
 <h2 class="title">A</h2>
@@ -144,6 +144,14 @@
 <dd>
 <div class="block">Sends a throwable in the <b>debug</b> log level.</div>
 </dd>
+<dt><a href="com/google/code/sbt/compiler/api/DefaultSourcePosition.html" title="class in com.google.code.sbt.compiler.api"><span class="typeNameLink">DefaultSourcePosition</span></a> - Class in <a href="com/google/code/sbt/compiler/api/package-summary.html">com.google.code.sbt.compiler.api</a></dt>
+<dd>
+<div class="block">Compilation error/warning position simple implementation.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/DefaultSourcePosition.html#DefaultSourcePosition-int-java.lang.String-int-int-java.io.File-">DefaultSourcePosition(int, String, int, int, File)</a></span> - Constructor for class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/DefaultSourcePosition.html" title="class in com.google.code.sbt.compiler.api">DefaultSourcePosition</a></dt>
+<dd>
+<div class="block">Creates instance of error/warning position.</div>
+</dd>
 </dl>
 <a name="I:E">
 <!--   -->
@@ -196,17 +204,57 @@
 <dd>
 <div class="block">Returns default Scala version for the compiler.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/DefaultSourcePosition.html#getFile--">getFile()</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/DefaultSourcePosition.html" title="class in com.google.code.sbt.compiler.api">DefaultSourcePosition</a></dt>
+<dd>
+<div class="block">File.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/SourcePosition.html#getFile--">getFile()</a></span> - Method in interface com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/SourcePosition.html" title="interface in com.google.code.sbt.compiler.api">SourcePosition</a></dt>
+<dd>
+<div class="block">File.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html#getJavacOptions--">getJavacOptions()</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html" title="class in com.google.code.sbt.compiler.api">CompilerConfiguration</a></dt>
 <dd>
 <div class="block">Returns Java compiler options.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/DefaultSourcePosition.html#getLine--">getLine()</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/DefaultSourcePosition.html" title="class in com.google.code.sbt.compiler.api">DefaultSourcePosition</a></dt>
+<dd>
+<div class="block">One-based line number or value less than one if line number not specified.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/SourcePosition.html#getLine--">getLine()</a></span> - Method in interface com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/SourcePosition.html" title="interface in com.google.code.sbt.compiler.api">SourcePosition</a></dt>
+<dd>
+<div class="block">One-based line number or value less than one if line number not specified.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/DefaultSourcePosition.html#getLineContent--">getLineContent()</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/DefaultSourcePosition.html" title="class in com.google.code.sbt.compiler.api">DefaultSourcePosition</a></dt>
+<dd>
+<div class="block">Line content or empty string if line number not specified.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/SourcePosition.html#getLineContent--">getLineContent()</a></span> - Method in interface com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/SourcePosition.html" title="interface in com.google.code.sbt.compiler.api">SourcePosition</a></dt>
+<dd>
+<div class="block">Line content or empty string if line number not specified.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html#getLogger--">getLogger()</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html" title="class in com.google.code.sbt.compiler.api">CompilerConfiguration</a></dt>
 <dd>
 <div class="block">Returns logger providing compilation feedback.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/DefaultSourcePosition.html#getOffset--">getOffset()</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/DefaultSourcePosition.html" title="class in com.google.code.sbt.compiler.api">DefaultSourcePosition</a></dt>
+<dd>
+<div class="block">Zero-based offset in characters from the beginning of the file or value less than zero if not specified.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/SourcePosition.html#getOffset--">getOffset()</a></span> - Method in interface com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/SourcePosition.html" title="interface in com.google.code.sbt.compiler.api">SourcePosition</a></dt>
+<dd>
+<div class="block">Zero-based offset in characters from the beginning of the file or value less than zero if not specified.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html#getOutputDirectory--">getOutputDirectory()</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html" title="class in com.google.code.sbt.compiler.api">CompilerConfiguration</a></dt>
 <dd>
 <div class="block">Returns compilation output directory.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/DefaultSourcePosition.html#getPointer--">getPointer()</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/DefaultSourcePosition.html" title="class in com.google.code.sbt.compiler.api">DefaultSourcePosition</a></dt>
+<dd>
+<div class="block">One-based position in the line or value less than one if position not specified.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/SourcePosition.html#getPointer--">getPointer()</a></span> - Method in interface com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/SourcePosition.html" title="interface in com.google.code.sbt.compiler.api">SourcePosition</a></dt>
+<dd>
+<div class="block">One-based position in the line or value less than one if position not specified.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/Analysis.html#getProducts-java.io.File-">getProducts(File)</a></span> - Method in interface com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/Analysis.html" title="interface in com.google.code.sbt.compiler.api">Analysis</a></dt>
 <dd>
@@ -240,6 +288,10 @@
 <dd>
 <div class="block">Returns Java and Scala source files.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html#getSourcePositionMapper--">getSourcePositionMapper()</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html" title="class in com.google.code.sbt.compiler.api">CompilerConfiguration</a></dt>
+<dd>
+<div class="block">Returns compilation error/warning source position mapper.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html#getXsbtiFile--">getXsbtiFile()</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html" title="class in com.google.code.sbt.compiler.api">CompilerConfiguration</a></dt>
 <dd>
 <div class="block">Returns SBT interface <code>sbt-interface-&lt;version&gt;.jar</code> file.</div>
@@ -269,6 +321,17 @@
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilerLogger.html#isWarnEnabled--">isWarnEnabled()</a></span> - Method in interface com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilerLogger.html" title="interface in com.google.code.sbt.compiler.api">CompilerLogger</a></dt>
 <dd>
 <div class="block">Returns true if <b>warn</b> log level is enabled.</div>
+</dd>
+</dl>
+<a name="I:M">
+<!--   -->
+</a>
+<h2 class="title">M</h2>
+<dl>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/SourcePositionMapper.html#map-com.google.code.sbt.compiler.api.SourcePosition-">map(SourcePosition)</a></span> - Method in interface com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/SourcePositionMapper.html" title="interface in com.google.code.sbt.compiler.api">SourcePositionMapper</a></dt>
+<dd>
+<div class="block">Performs mapping from the position in generated source file to the position in original source file it was
+ generated from.</div>
 </dd>
 </dl>
 <a name="I:P">
@@ -311,6 +374,10 @@
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html#setAnalysisCacheMap-java.util.Map-">setAnalysisCacheMap(Map&lt;File, File&gt;)</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html" title="class in com.google.code.sbt.compiler.api">CompilerConfiguration</a></dt>
 <dd>
 <div class="block">Sets SBT incremental compilation analysis cache file locations map for all reactor projects.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/SourcePositionMapper.html#setCharsetName-java.lang.String-">setCharsetName(String)</a></span> - Method in interface com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/SourcePositionMapper.html" title="interface in com.google.code.sbt.compiler.api">SourcePositionMapper</a></dt>
+<dd>
+<div class="block">Sets source files character set name (encoding).</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html#setClasspathFiles-java.util.List-">setClasspathFiles(List&lt;File&gt;)</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html" title="class in com.google.code.sbt.compiler.api">CompilerConfiguration</a></dt>
 <dd>
@@ -356,9 +423,21 @@
 <dd>
 <div class="block">Sets Java and Scala source files.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html#setSourcePositionMapper-com.google.code.sbt.compiler.api.SourcePositionMapper-">setSourcePositionMapper(SourcePositionMapper)</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html" title="class in com.google.code.sbt.compiler.api">CompilerConfiguration</a></dt>
+<dd>
+<div class="block">Sets compilation error/warning source position mapper.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html#setXsbtiFile-java.io.File-">setXsbtiFile(File)</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html" title="class in com.google.code.sbt.compiler.api">CompilerConfiguration</a></dt>
 <dd>
 <div class="block">Sets SBT interface <code>sbt-interface-&lt;version&gt;.jar</code> file.</div>
+</dd>
+<dt><a href="com/google/code/sbt/compiler/api/SourcePosition.html" title="interface in com.google.code.sbt.compiler.api"><span class="typeNameLink">SourcePosition</span></a> - Interface in <a href="com/google/code/sbt/compiler/api/package-summary.html">com.google.code.sbt.compiler.api</a></dt>
+<dd>
+<div class="block">Compilation error/warning position.</div>
+</dd>
+<dt><a href="com/google/code/sbt/compiler/api/SourcePositionMapper.html" title="interface in com.google.code.sbt.compiler.api"><span class="typeNameLink">SourcePositionMapper</span></a> - Interface in <a href="com/google/code/sbt/compiler/api/package-summary.html">com.google.code.sbt.compiler.api</a></dt>
+<dd>
+<div class="block">Mapper converting positions in generated source files to positions in original sources they were generated from.</div>
 </dd>
 </dl>
 <a name="I:U">
@@ -390,7 +469,7 @@
 <div class="block">Stores incremental compilation analysis in the file.</div>
 </dd>
 </dl>
-<a href="#I:A">A</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:W">W</a>&nbsp;</div>
+<a href="#I:A">A</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:R">R</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:U">U</a>&nbsp;<a href="#I:W">W</a>&nbsp;</div>
 <!-- ======= START OF BOTTOM NAVBAR ====== -->
 <div class="bottomNav"><a name="navbar.bottom">
 <!--   -->

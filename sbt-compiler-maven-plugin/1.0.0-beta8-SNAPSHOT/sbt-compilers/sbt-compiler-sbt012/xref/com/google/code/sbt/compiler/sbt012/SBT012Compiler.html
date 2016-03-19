@@ -41,11 +41,11 @@
 <a class="jxr_linenumber" name="L33" href="#L33">33</a>  <strong class="jxr_keyword">import</strong> com.typesafe.zinc.Setup;
 <a class="jxr_linenumber" name="L34" href="#L34">34</a>  
 <a class="jxr_linenumber" name="L35" href="#L35">35</a>  <em class="jxr_javadoccomment">/**</em>
-<a class="jxr_linenumber" name="L36" href="#L36">36</a>  <em class="jxr_javadoccomment"> * SBT 0.12 compatible compiler (uses &lt;a href="https://github.com/typesafehub/zinc"&gt;Zinc&lt;/a&gt; 0.2.5)</em>
+<a class="jxr_linenumber" name="L36" href="#L36">36</a>  <em class="jxr_javadoccomment"> * SBT 0.12.x compatible compiler (uses &lt;a href="https://github.com/typesafehub/zinc"&gt;Zinc&lt;/a&gt; 0.2.5)</em>
 <a class="jxr_linenumber" name="L37" href="#L37">37</a>  <em class="jxr_javadoccomment"> * </em>
 <a class="jxr_linenumber" name="L38" href="#L38">38</a>  <em class="jxr_javadoccomment"> * @author &lt;a href="<a href="mailto:gslowikowski@gmail.com" target="alexandria_uri">mailto:gslowikowski@gmail.com</a>"&gt;Grzegorz Slowikowski&lt;/a&gt;</em>
 <a class="jxr_linenumber" name="L39" href="#L39">39</a>  <em class="jxr_javadoccomment"> */</em>
-<a class="jxr_linenumber" name="L40" href="#L40">40</a>  @Component( role = com.google.code.sbt.compiler.api.Compiler.<strong class="jxr_keyword">class</strong>, hint = <span class="jxr_string">"sbt012"</span>, description = <span class="jxr_string">"SBT 0.12 compiler (uses Zinc 0.2.5)"</span> )
+<a class="jxr_linenumber" name="L40" href="#L40">40</a>  @Component( role = com.google.code.sbt.compiler.api.Compiler.<strong class="jxr_keyword">class</strong>, hint = <span class="jxr_string">"sbt012"</span>, description = <span class="jxr_string">"SBT 0.12.x compiler (uses Zinc 0.2.5)"</span> )
 <a class="jxr_linenumber" name="L41" href="#L41">41</a>  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../../../com/google/code/sbt/compiler/sbt012/SBT012Compiler.html">SBT012Compiler</a>
 <a class="jxr_linenumber" name="L42" href="#L42">42</a>      <strong class="jxr_keyword">extends</strong> AbstractCompiler
 <a class="jxr_linenumber" name="L43" href="#L43">43</a>  {
@@ -97,22 +97,26 @@
 <a class="jxr_linenumber" name="L89" href="#L89">89</a>                             resolveJavacOptions( configuration ), configuration.getAnalysisCacheFile(),
 <a class="jxr_linenumber" name="L90" href="#L90">90</a>                             configuration.getAnalysisCacheMap(), SBT012Compiler.COMPILE_ORDER,
 <a class="jxr_linenumber" name="L91" href="#L91">91</a>                             <em class="jxr_comment">/* getIncOptions(), */</em>logger.isDebugEnabled() <em class="jxr_comment">/* mirrorAnalysisCache */</em> );
-<a class="jxr_linenumber" name="L92" href="#L92">92</a>          <strong class="jxr_keyword">if</strong> ( logger.isDebugEnabled() )
+<a class="jxr_linenumber" name="L92" href="#L92">92</a>          <strong class="jxr_keyword">if</strong> ( configuration.getSourcePositionMapper() != <strong class="jxr_keyword">null</strong> )
 <a class="jxr_linenumber" name="L93" href="#L93">93</a>          {
-<a class="jxr_linenumber" name="L94" href="#L94">94</a>              Inputs.debug( inputs, sbtLogger );
+<a class="jxr_linenumber" name="L94" href="#L94">94</a>              logger.warn( <span class="jxr_string">"Source position mappers not supported"</span> );
 <a class="jxr_linenumber" name="L95" href="#L95">95</a>          }
-<a class="jxr_linenumber" name="L96" href="#L96">96</a>  
-<a class="jxr_linenumber" name="L97" href="#L97">97</a>          <strong class="jxr_keyword">try</strong>
-<a class="jxr_linenumber" name="L98" href="#L98">98</a>          {
-<a class="jxr_linenumber" name="L99" href="#L99">99</a>              <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">new</strong> <a href="../../../../../../com/google/code/sbt/compiler/sbt012/SBT012Analysis.html">SBT012Analysis</a>( compiler.compile( inputs, sbtLogger ) );
-<a class="jxr_linenumber" name="L100" href="#L100">100</a>         }
-<a class="jxr_linenumber" name="L101" href="#L101">101</a>         <strong class="jxr_keyword">catch</strong> ( CompileFailed e )
+<a class="jxr_linenumber" name="L96" href="#L96">96</a>          <strong class="jxr_keyword">if</strong> ( logger.isDebugEnabled() )
+<a class="jxr_linenumber" name="L97" href="#L97">97</a>          {
+<a class="jxr_linenumber" name="L98" href="#L98">98</a>              Inputs.debug( inputs, sbtLogger );
+<a class="jxr_linenumber" name="L99" href="#L99">99</a>          }
+<a class="jxr_linenumber" name="L100" href="#L100">100</a> 
+<a class="jxr_linenumber" name="L101" href="#L101">101</a>         <strong class="jxr_keyword">try</strong>
 <a class="jxr_linenumber" name="L102" href="#L102">102</a>         {
-<a class="jxr_linenumber" name="L103" href="#L103">103</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> CompilerException( <span class="jxr_string">"Scala compilation failed"</span>, e );
+<a class="jxr_linenumber" name="L103" href="#L103">103</a>             <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">new</strong> <a href="../../../../../../com/google/code/sbt/compiler/sbt012/SBT012Analysis.html">SBT012Analysis</a>( compiler.compile( inputs, sbtLogger ) );
 <a class="jxr_linenumber" name="L104" href="#L104">104</a>         }
-<a class="jxr_linenumber" name="L105" href="#L105">105</a>     }
-<a class="jxr_linenumber" name="L106" href="#L106">106</a> 
-<a class="jxr_linenumber" name="L107" href="#L107">107</a> }
+<a class="jxr_linenumber" name="L105" href="#L105">105</a>         <strong class="jxr_keyword">catch</strong> ( CompileFailed e )
+<a class="jxr_linenumber" name="L106" href="#L106">106</a>         {
+<a class="jxr_linenumber" name="L107" href="#L107">107</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> CompilerException( <span class="jxr_string">"Scala compilation failed"</span>, e );
+<a class="jxr_linenumber" name="L108" href="#L108">108</a>         }
+<a class="jxr_linenumber" name="L109" href="#L109">109</a>     }
+<a class="jxr_linenumber" name="L110" href="#L110">110</a> 
+<a class="jxr_linenumber" name="L111" href="#L111">111</a> }
 </pre>
 <hr/>
 <div id="footer">Copyright &#169; 2013&#x2013;2016. All rights reserved.</div>

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -94,10 +94,12 @@ var activeTableTab = "activeTableTab";
 <div class="subTitle">com.google.code.sbt.compiler.api</div>
 <h2 title="Class CompilerConfiguration" class="title">Class CompilerConfiguration</h2>
 <map id="G" name="G">
-<area shape="rect" id="c57" href="./CompilerLogger.html" title="com.google.code.sbt.compiler.api.CompilerLogger" alt="" coords="33,107,143,146"/>
-<area shape="rect" id="node1" href="./CompilerLogger.html" title="&lt;TABLE&gt;" alt="" coords="23,102,153,151"/>
-<area shape="rect" id="c59" href="./CompilerConfiguration.html" title="com.google.code.sbt.compiler.api.CompilerConfiguration" alt="" coords="16,17,160,41"/>
-<area shape="rect" id="node2" href="./CompilerConfiguration.html" title="&lt;TABLE&gt;" alt="" coords="5,5,171,53"/>
+<area shape="rect" id="c74" href="./SourcePositionMapper.html" title="com.google.code.sbt.compiler.api.SourcePositionMapper" alt="" coords="16,107,160,146"/>
+<area shape="rect" id="node1" href="./SourcePositionMapper.html" title="&lt;TABLE&gt;" alt="" coords="5,102,171,151"/>
+<area shape="rect" id="c78" href="./CompilerLogger.html" title="com.google.code.sbt.compiler.api.CompilerLogger" alt="" coords="205,107,315,146"/>
+<area shape="rect" id="node2" href="./CompilerLogger.html" title="&lt;TABLE&gt;" alt="" coords="195,102,325,151"/>
+<area shape="rect" id="c80" href="./CompilerConfiguration.html" title="com.google.code.sbt.compiler.api.CompilerConfiguration" alt="" coords="101,17,245,41"/>
+<area shape="rect" id="node3" href="./CompilerConfiguration.html" title="&lt;TABLE&gt;" alt="" coords="91,5,256,53"/>
 </map>
 <!-- UML diagram added by UMLGraph version R5_6-24-gf6e263 (http://www.umlgraph.org/) -->
 <div align="center"><img src="CompilerConfiguration.png" alt="Package class diagram package CompilerConfiguration" usemap="#G" border=0/></div>
@@ -237,90 +239,102 @@ extends <a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/Object.h
 </td>
 </tr>
 <tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../com/google/code/sbt/compiler/api/SourcePositionMapper.html" title="interface in com.google.code.sbt.compiler.api">SourcePositionMapper</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/api/CompilerConfiguration.html#getSourcePositionMapper--">getSourcePositionMapper</a></span>()</code>
+<div class="block">Returns compilation error/warning source position mapper.</div>
+</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/api/CompilerConfiguration.html#getXsbtiFile--">getXsbtiFile</a></span>()</code>
 <div class="block">Returns SBT interface <code>sbt-interface-&lt;version&gt;.jar</code> file.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/api/CompilerConfiguration.html#setAnalysisCacheFile-java.io.File-">setAnalysisCacheFile</a></span>(<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;analysisCacheFile)</code>
 <div class="block">Sets SBT incremental compilation analysis cache file location for a project.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/api/CompilerConfiguration.html#setAnalysisCacheMap-java.util.Map-">setAnalysisCacheMap</a></span>(<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>,<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&gt;&nbsp;analysisCacheMap)</code>
 <div class="block">Sets SBT incremental compilation analysis cache file locations map for all reactor projects.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/api/CompilerConfiguration.html#setClasspathFiles-java.util.List-">setClasspathFiles</a></span>(<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&gt;&nbsp;classpathFiles)</code>
 <div class="block">Sets compilation classpath files.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/api/CompilerConfiguration.html#setCompilerInterfaceSrcFile-java.io.File-">setCompilerInterfaceSrcFile</a></span>(<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;compilerInterfaceSrcFile)</code>
 <div class="block">Sets SBT compiler interface sources <code>compiler-interface-&lt;version&gt;-sources.jar</code> file.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/api/CompilerConfiguration.html#setJavacOptions-java.lang.String-">setJavacOptions</a></span>(<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;javacOptions)</code>
 <div class="block">Sets Java compiler options.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/api/CompilerConfiguration.html#setLogger-com.google.code.sbt.compiler.api.CompilerLogger-">setLogger</a></span>(<a href="../../../../../../com/google/code/sbt/compiler/api/CompilerLogger.html" title="interface in com.google.code.sbt.compiler.api">CompilerLogger</a>&nbsp;log)</code>
 <div class="block">Sets logger providing compilation feedback.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/api/CompilerConfiguration.html#setOutputDirectory-java.io.File-">setOutputDirectory</a></span>(<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;outputDirectory)</code>
 <div class="block">Sets compilation output directory.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/api/CompilerConfiguration.html#setScalaCompilerFile-java.io.File-">setScalaCompilerFile</a></span>(<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;scalaCompilerFile)</code>
 <div class="block">Sets Scala compiler <code>scala-compiler-&lt;version&gt;.jar</code> file.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/api/CompilerConfiguration.html#setScalacOptions-java.lang.String-">setScalacOptions</a></span>(<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;scalacOptions)</code>
 <div class="block">Sets Scala compiler options.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/api/CompilerConfiguration.html#setScalaExtraJarFiles-java.util.List-">setScalaExtraJarFiles</a></span>(<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&gt;&nbsp;scalaExtraJars)</code>
 <div class="block">Sets additional jar files to be added to Scala compiler classloader.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/api/CompilerConfiguration.html#setScalaLibraryFile-java.io.File-">setScalaLibraryFile</a></span>(<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;scalaLibraryFile)</code>
 <div class="block">Sets Scala library <code>scala-library-&lt;version&gt;.jar</code> file.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/api/CompilerConfiguration.html#setSourceEncoding-java.lang.String-">setSourceEncoding</a></span>(<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;sourceEncoding)</code>
 <div class="block">Sets Scala and Java source files encoding.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/api/CompilerConfiguration.html#setSourceFiles-java.util.List-">setSourceFiles</a></span>(<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&gt;&nbsp;sourceFiles)</code>
 <div class="block">Sets Java and Scala source files.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/api/CompilerConfiguration.html#setSourcePositionMapper-com.google.code.sbt.compiler.api.SourcePositionMapper-">setSourcePositionMapper</a></span>(<a href="../../../../../../com/google/code/sbt/compiler/api/SourcePositionMapper.html" title="interface in com.google.code.sbt.compiler.api">SourcePositionMapper</a>&nbsp;sourcePositionMapper)</code>
+<div class="block">Sets compilation error/warning source position mapper.</div>
+</td>
+</tr>
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/api/CompilerConfiguration.html#setXsbtiFile-java.io.File-">setXsbtiFile</a></span>(<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&nbsp;xsbtiFile)</code>
 <div class="block">Sets SBT interface <code>sbt-interface-&lt;version&gt;.jar</code> file.</div>
@@ -746,7 +760,7 @@ extends <a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/Object.h
 <a name="setAnalysisCacheMap-java.util.Map-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setAnalysisCacheMap</h4>
 <pre>public&nbsp;void&nbsp;setAnalysisCacheMap(<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>,<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</a>&gt;&nbsp;analysisCacheMap)</pre>
@@ -754,6 +768,34 @@ extends <a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/Object.h
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>analysisCacheMap</code> - analysis cache files map</dd>
+</dl>
+</li>
+</ul>
+<a name="getSourcePositionMapper--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSourcePositionMapper</h4>
+<pre>public&nbsp;<a href="../../../../../../com/google/code/sbt/compiler/api/SourcePositionMapper.html" title="interface in com.google.code.sbt.compiler.api">SourcePositionMapper</a>&nbsp;getSourcePositionMapper()</pre>
+<div class="block">Returns compilation error/warning source position mapper.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>source position mapper</dd>
+</dl>
+</li>
+</ul>
+<a name="setSourcePositionMapper-com.google.code.sbt.compiler.api.SourcePositionMapper-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setSourcePositionMapper</h4>
+<pre>public&nbsp;void&nbsp;setSourcePositionMapper(<a href="../../../../../../com/google/code/sbt/compiler/api/SourcePositionMapper.html" title="interface in com.google.code.sbt.compiler.api">SourcePositionMapper</a>&nbsp;sourcePositionMapper)</pre>
+<div class="block">Sets compilation error/warning source position mapper.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sourcePositionMapper</code> - source position mapper</dd>
 </dl>
 </li>
 </ul>

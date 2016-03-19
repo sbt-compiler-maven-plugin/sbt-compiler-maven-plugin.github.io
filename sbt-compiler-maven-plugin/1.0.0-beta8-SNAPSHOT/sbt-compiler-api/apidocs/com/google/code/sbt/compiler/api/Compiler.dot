@@ -10,19 +10,19 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// com.google.code.sbt.compiler.api.Compiler
-	c52 [label=<<table title="com.google.code.sbt.compiler.api.Compiler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Compiler.html">
+	c70 [label=<<table title="com.google.code.sbt.compiler.api.Compiler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Compiler.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Compiler </td></tr>
 		</table></td></tr>
 		</table>>, URL="./Compiler.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.sbt.compiler.api.AbstractCompiler
-	c55 [label=<<table title="com.google.code.sbt.compiler.api.AbstractCompiler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AbstractCompiler.html">
+	c73 [label=<<table title="com.google.code.sbt.compiler.api.AbstractCompiler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AbstractCompiler.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="arial italic"> AbstractCompiler </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./AbstractCompiler.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	//com.google.code.sbt.compiler.api.AbstractCompiler implements com.google.code.sbt.compiler.api.Compiler
-	c52:p -> c55:p [dir=back,arrowtail=empty,style=dashed];
+	c70:p -> c73:p [dir=back,arrowtail=empty,style=dashed];
 }
 
