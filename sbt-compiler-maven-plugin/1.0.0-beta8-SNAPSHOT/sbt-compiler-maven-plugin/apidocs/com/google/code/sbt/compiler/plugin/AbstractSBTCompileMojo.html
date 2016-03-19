@@ -114,7 +114,7 @@ var activeTableTab = "activeTableTab";
 <area shape="rect" id="node21" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/metadata/ArtifactMetadataSource.html" title="&lt;TABLE&gt;" alt="" coords="1211,197,1403,259"/>
 <area shape="rect" id="node23" href="null" title="&lt;TABLE&gt;" alt="" coords="1427,197,1605,259"/>
 <area shape="rect" id="c78" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/resolver/filter/ArtifactFilter.html" title="org.apache.maven.artifact.resolver.filter.ArtifactFilter" alt="" coords="1640,203,1829,253"/>
-<area shape="rect" id="node26" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/resolver/filter/ArtifactFilter.html" title="&lt;TABLE&gt;" alt="" coords="1629,197,1840,259"/>
+<area shape="rect" id="node27" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/resolver/filter/ArtifactFilter.html" title="&lt;TABLE&gt;" alt="" coords="1629,197,1840,259"/>
 <area shape="rect" id="c39" href="http://maven.apache.org/ref/2.2.1/maven-plugin-api/apidocs/org/apache/maven/plugin/AbstractMojo.html" title="org.apache.maven.plugin.AbstractMojo" alt="" coords="707,11,831,47"/>
 <area shape="rect" id="node6" href="http://maven.apache.org/ref/2.2.1/maven-plugin-api/apidocs/org/apache/maven/plugin/AbstractMojo.html" title="&lt;TABLE&gt;" alt="" coords="697,5,841,53"/>
 </map>
@@ -416,7 +416,7 @@ protected&nbsp;<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/S
  If specified, this version of Scala compiler is used for compilation.<br>
  If not specified, version of project's <code>org.scala-lang:scala-library</code> dependency is used.<br>
  If there is no <code>org.scala-lang:scala-library</code> dependency in the project (in Java only projects),
- selected compiler's <a href="https://sbt-compiler-maven-plugin.github.io/sbt-compiler-api/apidocs/com/google/code/sbt/compiler/api/Compiler.html?is-external=true#getDefaultScalaVersion--" title="class or interface in com.google.code.sbt.compiler.api"><code>Compiler.getDefaultScalaVersion()</code></a> is used.</div>
+ selected compiler's <a href="https://sbt-compiler-maven-plugin.github.io/sbt-compiler-maven-plugin/1.0.0-beta8-SNAPSHOT/sbt-compiler-api/apidocs/com/google/code/sbt/compiler/api/Compiler.html?is-external=true#getDefaultScalaVersion--" title="class or interface in com.google.code.sbt.compiler.api"><code>Compiler.getDefaultScalaVersion()</code></a> is used.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
@@ -437,18 +437,18 @@ protected&nbsp;<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/S
  There are three cases possible:
  <ul>
  <li>
- If <a href="../../../../../../com/google/code/sbt/compiler/plugin/AbstractSBTCompileMojo.html#sbtVersion"><code>sbtVersion</code></a> is specified, compatible <a href="https://sbt-compiler-maven-plugin.github.io/sbt-compiler-api/apidocs/com/google/code/sbt/compiler/api/Compiler.html?is-external=true" title="class or interface in com.google.code.sbt.compiler.api"><code>Compiler</code></a> implementation
+ If <a href="../../../../../../com/google/code/sbt/compiler/plugin/AbstractSBTCompileMojo.html#sbtVersion"><code>sbtVersion</code></a> is specified, compatible <a href="https://sbt-compiler-maven-plugin.github.io/sbt-compiler-maven-plugin/1.0.0-beta8-SNAPSHOT/sbt-compiler-api/apidocs/com/google/code/sbt/compiler/api/Compiler.html?is-external=true" title="class or interface in com.google.code.sbt.compiler.api"><code>Compiler</code></a> implementation
  is selected and configured to use <a href="../../../../../../com/google/code/sbt/compiler/plugin/AbstractSBTCompileMojo.html#sbtVersion"><code>sbtVersion</code></a> SBT version for compilation.
  </li>
  <li>
  If <a href="../../../../../../com/google/code/sbt/compiler/plugin/AbstractSBTCompileMojo.html#sbtVersion"><code>sbtVersion</code></a> is not specified, and <a href="../../../../../../com/google/code/sbt/compiler/plugin/AbstractSBTCompileMojo.html#playVersion"><code>playVersion</code></a> is specified
- <a href="../../../../../../com/google/code/sbt/compiler/plugin/AbstractSBTCompileMojo.html#playVersion"><code>playVersion</code></a> parameter value is used to indirectly select compatible <a href="https://sbt-compiler-maven-plugin.github.io/sbt-compiler-api/apidocs/com/google/code/sbt/compiler/api/Compiler.html?is-external=true" title="class or interface in com.google.code.sbt.compiler.api"><code>Compiler</code></a> implementation
- and it's <a href="https://sbt-compiler-maven-plugin.github.io/sbt-compiler-api/apidocs/com/google/code/sbt/compiler/api/Compiler.html?is-external=true#getDefaultSbtVersion--" title="class or interface in com.google.code.sbt.compiler.api"><code>Compiler.getDefaultSbtVersion()</code></a> SBT version used for compilation.
+ <a href="../../../../../../com/google/code/sbt/compiler/plugin/AbstractSBTCompileMojo.html#playVersion"><code>playVersion</code></a> parameter value is used to indirectly select compatible <a href="https://sbt-compiler-maven-plugin.github.io/sbt-compiler-maven-plugin/1.0.0-beta8-SNAPSHOT/sbt-compiler-api/apidocs/com/google/code/sbt/compiler/api/Compiler.html?is-external=true" title="class or interface in com.google.code.sbt.compiler.api"><code>Compiler</code></a> implementation
+ and it's <a href="https://sbt-compiler-maven-plugin.github.io/sbt-compiler-maven-plugin/1.0.0-beta8-SNAPSHOT/sbt-compiler-api/apidocs/com/google/code/sbt/compiler/api/Compiler.html?is-external=true#getDefaultSbtVersion--" title="class or interface in com.google.code.sbt.compiler.api"><code>Compiler.getDefaultSbtVersion()</code></a> SBT version used for compilation.
  </li>
  <li>
  If both <a href="../../../../../../com/google/code/sbt/compiler/plugin/AbstractSBTCompileMojo.html#sbtVersion"><code>sbtVersion</code></a> and <a href="../../../../../../com/google/code/sbt/compiler/plugin/AbstractSBTCompileMojo.html#playVersion"><code>playVersion</code></a> are not specified
- the most recent <a href="https://sbt-compiler-maven-plugin.github.io/sbt-compiler-api/apidocs/com/google/code/sbt/compiler/api/Compiler.html?is-external=true" title="class or interface in com.google.code.sbt.compiler.api"><code>Compiler</code></a> implementation is selected
- and it's <a href="https://sbt-compiler-maven-plugin.github.io/sbt-compiler-api/apidocs/com/google/code/sbt/compiler/api/Compiler.html?is-external=true#getDefaultSbtVersion--" title="class or interface in com.google.code.sbt.compiler.api"><code>Compiler.getDefaultSbtVersion()</code></a> SBT version used for compilation.
+ the most recent <a href="https://sbt-compiler-maven-plugin.github.io/sbt-compiler-maven-plugin/1.0.0-beta8-SNAPSHOT/sbt-compiler-api/apidocs/com/google/code/sbt/compiler/api/Compiler.html?is-external=true" title="class or interface in com.google.code.sbt.compiler.api"><code>Compiler</code></a> implementation is selected
+ and it's <a href="https://sbt-compiler-maven-plugin.github.io/sbt-compiler-maven-plugin/1.0.0-beta8-SNAPSHOT/sbt-compiler-api/apidocs/com/google/code/sbt/compiler/api/Compiler.html?is-external=true#getDefaultSbtVersion--" title="class or interface in com.google.code.sbt.compiler.api"><code>Compiler.getDefaultSbtVersion()</code></a> SBT version used for compilation.
  </li>
  </ul></div>
 <dl>

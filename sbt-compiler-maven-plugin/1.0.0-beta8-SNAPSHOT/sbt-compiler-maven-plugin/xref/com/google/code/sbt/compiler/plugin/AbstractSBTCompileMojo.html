@@ -34,8 +34,8 @@
 <a class="jxr_linenumber" name="L26" href="#L26">26</a>  <strong class="jxr_keyword">import</strong> java.util.Collections;
 <a class="jxr_linenumber" name="L27" href="#L27">27</a>  <strong class="jxr_keyword">import</strong> java.util.Iterator;
 <a class="jxr_linenumber" name="L28" href="#L28">28</a>  <strong class="jxr_keyword">import</strong> java.util.List;
-<a class="jxr_linenumber" name="L29" href="#L29">29</a>  <strong class="jxr_keyword">import</strong> java.util.Locale;
-<a class="jxr_linenumber" name="L30" href="#L30">30</a>  <strong class="jxr_keyword">import</strong> java.util.Map;
+<a class="jxr_linenumber" name="L29" href="#L29">29</a>  <strong class="jxr_keyword">import</strong> java.util.Map;
+<a class="jxr_linenumber" name="L30" href="#L30">30</a>  <strong class="jxr_keyword">import</strong> java.util.ServiceLoader;
 <a class="jxr_linenumber" name="L31" href="#L31">31</a>  <strong class="jxr_keyword">import</strong> java.util.Set;
 <a class="jxr_linenumber" name="L32" href="#L32">32</a>  <strong class="jxr_keyword">import</strong> java.util.concurrent.ConcurrentHashMap;
 <a class="jxr_linenumber" name="L33" href="#L33">33</a>  
@@ -759,72 +759,59 @@
 <a class="jxr_linenumber" name="L751" href="#L751">751</a>                 setCachedClassLoader( compilerId, compilerClassLoader );
 <a class="jxr_linenumber" name="L752" href="#L752">752</a>             }
 <a class="jxr_linenumber" name="L753" href="#L753">753</a> 
-<a class="jxr_linenumber" name="L754" href="#L754">754</a>             String compilerClassName =
-<a class="jxr_linenumber" name="L755" href="#L755">755</a>                 String.format( <span class="jxr_string">"com.google.code.sbt.compiler.%s.%sCompiler"</span>, compilerId,
-<a class="jxr_linenumber" name="L756" href="#L756">756</a>                                compilerId.toUpperCase( Locale.ROOT ) );
-<a class="jxr_linenumber" name="L757" href="#L757">757</a>             Compiler sbtCompiler = (Compiler) compilerClassLoader.loadClass( compilerClassName ).newInstance();
-<a class="jxr_linenumber" name="L758" href="#L758">758</a> 
-<a class="jxr_linenumber" name="L759" href="#L759">759</a>             getLog().debug( String.format( <span class="jxr_string">"Using autodetected compiler \&quot;%s\&quot;."</span>, compilerId ) );
-<a class="jxr_linenumber" name="L760" href="#L760">760</a> 
-<a class="jxr_linenumber" name="L761" href="#L761">761</a>             <strong class="jxr_keyword">return</strong> sbtCompiler;
-<a class="jxr_linenumber" name="L762" href="#L762">762</a>         }
-<a class="jxr_linenumber" name="L763" href="#L763">763</a>         <strong class="jxr_keyword">catch</strong> ( ArtifactNotFoundException e )
-<a class="jxr_linenumber" name="L764" href="#L764">764</a>         {
-<a class="jxr_linenumber" name="L765" href="#L765">765</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> MojoExecutionException( <span class="jxr_string">"Compiler autodetection failed"</span>, e );
-<a class="jxr_linenumber" name="L766" href="#L766">766</a>         }
-<a class="jxr_linenumber" name="L767" href="#L767">767</a>         <strong class="jxr_keyword">catch</strong> ( ArtifactResolutionException e )
-<a class="jxr_linenumber" name="L768" href="#L768">768</a>         {
-<a class="jxr_linenumber" name="L769" href="#L769">769</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> MojoExecutionException( <span class="jxr_string">"Compiler autodetection failed"</span>, e );
-<a class="jxr_linenumber" name="L770" href="#L770">770</a>         }
-<a class="jxr_linenumber" name="L771" href="#L771">771</a>         <strong class="jxr_keyword">catch</strong> ( ClassNotFoundException e )
-<a class="jxr_linenumber" name="L772" href="#L772">772</a>         {
-<a class="jxr_linenumber" name="L773" href="#L773">773</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> MojoExecutionException( <span class="jxr_string">"Compiler autodetection failed"</span>, e );
-<a class="jxr_linenumber" name="L774" href="#L774">774</a>         }
-<a class="jxr_linenumber" name="L775" href="#L775">775</a>         <strong class="jxr_keyword">catch</strong> ( IllegalAccessException e )
-<a class="jxr_linenumber" name="L776" href="#L776">776</a>         {
-<a class="jxr_linenumber" name="L777" href="#L777">777</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> MojoExecutionException( <span class="jxr_string">"Compiler autodetection failed"</span>, e );
-<a class="jxr_linenumber" name="L778" href="#L778">778</a>         }
-<a class="jxr_linenumber" name="L779" href="#L779">779</a>         <strong class="jxr_keyword">catch</strong> ( InstantiationException e )
-<a class="jxr_linenumber" name="L780" href="#L780">780</a>         {
-<a class="jxr_linenumber" name="L781" href="#L781">781</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> MojoExecutionException( <span class="jxr_string">"Compiler autodetection failed"</span>, e );
-<a class="jxr_linenumber" name="L782" href="#L782">782</a>         }
-<a class="jxr_linenumber" name="L783" href="#L783">783</a>         <strong class="jxr_keyword">catch</strong> ( InvalidDependencyVersionException e )
-<a class="jxr_linenumber" name="L784" href="#L784">784</a>         {
-<a class="jxr_linenumber" name="L785" href="#L785">785</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> MojoExecutionException( <span class="jxr_string">"Compiler autodetection failed"</span>, e );
-<a class="jxr_linenumber" name="L786" href="#L786">786</a>         }
-<a class="jxr_linenumber" name="L787" href="#L787">787</a>         <strong class="jxr_keyword">catch</strong> ( MalformedURLException e )
-<a class="jxr_linenumber" name="L788" href="#L788">788</a>         {
-<a class="jxr_linenumber" name="L789" href="#L789">789</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> MojoExecutionException( <span class="jxr_string">"Compiler autodetection failed"</span>, e );
-<a class="jxr_linenumber" name="L790" href="#L790">790</a>         }
-<a class="jxr_linenumber" name="L791" href="#L791">791</a>         <strong class="jxr_keyword">catch</strong> ( ProjectBuildingException e )
-<a class="jxr_linenumber" name="L792" href="#L792">792</a>         {
-<a class="jxr_linenumber" name="L793" href="#L793">793</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> MojoExecutionException( <span class="jxr_string">"Compiler autodetection failed"</span>, e );
-<a class="jxr_linenumber" name="L794" href="#L794">794</a>         }
-<a class="jxr_linenumber" name="L795" href="#L795">795</a>     }
-<a class="jxr_linenumber" name="L796" href="#L796">796</a> 
-<a class="jxr_linenumber" name="L797" href="#L797">797</a>     <em class="jxr_comment">// Plugins in format "groupId1:artifactId1:version1 groupId2:artifactId2:version2"</em>
-<a class="jxr_linenumber" name="L798" href="#L798">798</a>     <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">void</strong> resolveScalacPluginArtifacts( List&lt;Artifact&gt; scalacPluginArtifacts, String plugins )
-<a class="jxr_linenumber" name="L799" href="#L799">799</a>         <strong class="jxr_keyword">throws</strong> ArtifactNotFoundException, ArtifactResolutionException
-<a class="jxr_linenumber" name="L800" href="#L800">800</a>     {
-<a class="jxr_linenumber" name="L801" href="#L801">801</a>         <strong class="jxr_keyword">if</strong> ( plugins != <strong class="jxr_keyword">null</strong> &amp;&amp; plugins.trim().length() &gt; 0 )
-<a class="jxr_linenumber" name="L802" href="#L802">802</a>         {
-<a class="jxr_linenumber" name="L803" href="#L803">803</a>             String[] scalacPluginsGAVs = plugins.trim().split( <span class="jxr_string">" "</span> );
-<a class="jxr_linenumber" name="L804" href="#L804">804</a>             <strong class="jxr_keyword">for</strong> ( String scalacPluginGAV : scalacPluginsGAVs )
-<a class="jxr_linenumber" name="L805" href="#L805">805</a>             {
-<a class="jxr_linenumber" name="L806" href="#L806">806</a>                 String[] gav = scalacPluginGAV.split( <span class="jxr_string">":"</span> );
-<a class="jxr_linenumber" name="L807" href="#L807">807</a>                 String groupId = gav[0];
-<a class="jxr_linenumber" name="L808" href="#L808">808</a>                 String artifactId = gav[1];
-<a class="jxr_linenumber" name="L809" href="#L809">809</a>                 String version = gav[2];
-<a class="jxr_linenumber" name="L810" href="#L810">810</a>                 Artifact scalacPluginArtifact = getResolvedArtifact( groupId, artifactId, version );
-<a class="jxr_linenumber" name="L811" href="#L811">811</a>                 <strong class="jxr_keyword">if</strong> ( scalacPluginArtifact != <strong class="jxr_keyword">null</strong> )
-<a class="jxr_linenumber" name="L812" href="#L812">812</a>                 {
-<a class="jxr_linenumber" name="L813" href="#L813">813</a>                     scalacPluginArtifacts.add( scalacPluginArtifact );
-<a class="jxr_linenumber" name="L814" href="#L814">814</a>                 }
-<a class="jxr_linenumber" name="L815" href="#L815">815</a>             }
-<a class="jxr_linenumber" name="L816" href="#L816">816</a>         }
-<a class="jxr_linenumber" name="L817" href="#L817">817</a>     }
-<a class="jxr_linenumber" name="L818" href="#L818">818</a> 
-<a class="jxr_linenumber" name="L819" href="#L819">819</a> }
+<a class="jxr_linenumber" name="L754" href="#L754">754</a>             ServiceLoader&lt;Compiler&gt; compilerServiceLoader = ServiceLoader.load( Compiler.<strong class="jxr_keyword">class</strong>, compilerClassLoader );
+<a class="jxr_linenumber" name="L755" href="#L755">755</a>             <em class="jxr_comment">// get first (there should be exactly one)</em>
+<a class="jxr_linenumber" name="L756" href="#L756">756</a>             Compiler sbtCompiler = compilerServiceLoader.iterator().next();
+<a class="jxr_linenumber" name="L757" href="#L757">757</a> 
+<a class="jxr_linenumber" name="L758" href="#L758">758</a>             getLog().debug( String.format( <span class="jxr_string">"Using autodetected compiler \&quot;%s\&quot;."</span>, compilerId ) );
+<a class="jxr_linenumber" name="L759" href="#L759">759</a> 
+<a class="jxr_linenumber" name="L760" href="#L760">760</a>             <strong class="jxr_keyword">return</strong> sbtCompiler;
+<a class="jxr_linenumber" name="L761" href="#L761">761</a>         }
+<a class="jxr_linenumber" name="L762" href="#L762">762</a>         <strong class="jxr_keyword">catch</strong> ( ArtifactNotFoundException e )
+<a class="jxr_linenumber" name="L763" href="#L763">763</a>         {
+<a class="jxr_linenumber" name="L764" href="#L764">764</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> MojoExecutionException( <span class="jxr_string">"Compiler autodetection failed"</span>, e );
+<a class="jxr_linenumber" name="L765" href="#L765">765</a>         }
+<a class="jxr_linenumber" name="L766" href="#L766">766</a>         <strong class="jxr_keyword">catch</strong> ( ArtifactResolutionException e )
+<a class="jxr_linenumber" name="L767" href="#L767">767</a>         {
+<a class="jxr_linenumber" name="L768" href="#L768">768</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> MojoExecutionException( <span class="jxr_string">"Compiler autodetection failed"</span>, e );
+<a class="jxr_linenumber" name="L769" href="#L769">769</a>         }
+<a class="jxr_linenumber" name="L770" href="#L770">770</a>         <strong class="jxr_keyword">catch</strong> ( InvalidDependencyVersionException e )
+<a class="jxr_linenumber" name="L771" href="#L771">771</a>         {
+<a class="jxr_linenumber" name="L772" href="#L772">772</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> MojoExecutionException( <span class="jxr_string">"Compiler autodetection failed"</span>, e );
+<a class="jxr_linenumber" name="L773" href="#L773">773</a>         }
+<a class="jxr_linenumber" name="L774" href="#L774">774</a>         <strong class="jxr_keyword">catch</strong> ( MalformedURLException e )
+<a class="jxr_linenumber" name="L775" href="#L775">775</a>         {
+<a class="jxr_linenumber" name="L776" href="#L776">776</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> MojoExecutionException( <span class="jxr_string">"Compiler autodetection failed"</span>, e );
+<a class="jxr_linenumber" name="L777" href="#L777">777</a>         }
+<a class="jxr_linenumber" name="L778" href="#L778">778</a>         <strong class="jxr_keyword">catch</strong> ( ProjectBuildingException e )
+<a class="jxr_linenumber" name="L779" href="#L779">779</a>         {
+<a class="jxr_linenumber" name="L780" href="#L780">780</a>             <strong class="jxr_keyword">throw</strong> <strong class="jxr_keyword">new</strong> MojoExecutionException( <span class="jxr_string">"Compiler autodetection failed"</span>, e );
+<a class="jxr_linenumber" name="L781" href="#L781">781</a>         }
+<a class="jxr_linenumber" name="L782" href="#L782">782</a>     }
+<a class="jxr_linenumber" name="L783" href="#L783">783</a> 
+<a class="jxr_linenumber" name="L784" href="#L784">784</a>     <em class="jxr_comment">// Plugins in format "groupId1:artifactId1:version1 groupId2:artifactId2:version2"</em>
+<a class="jxr_linenumber" name="L785" href="#L785">785</a>     <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">void</strong> resolveScalacPluginArtifacts( List&lt;Artifact&gt; scalacPluginArtifacts, String plugins )
+<a class="jxr_linenumber" name="L786" href="#L786">786</a>         <strong class="jxr_keyword">throws</strong> ArtifactNotFoundException, ArtifactResolutionException
+<a class="jxr_linenumber" name="L787" href="#L787">787</a>     {
+<a class="jxr_linenumber" name="L788" href="#L788">788</a>         <strong class="jxr_keyword">if</strong> ( plugins != <strong class="jxr_keyword">null</strong> &amp;&amp; plugins.trim().length() &gt; 0 )
+<a class="jxr_linenumber" name="L789" href="#L789">789</a>         {
+<a class="jxr_linenumber" name="L790" href="#L790">790</a>             String[] scalacPluginsGAVs = plugins.trim().split( <span class="jxr_string">" "</span> );
+<a class="jxr_linenumber" name="L791" href="#L791">791</a>             <strong class="jxr_keyword">for</strong> ( String scalacPluginGAV : scalacPluginsGAVs )
+<a class="jxr_linenumber" name="L792" href="#L792">792</a>             {
+<a class="jxr_linenumber" name="L793" href="#L793">793</a>                 String[] gav = scalacPluginGAV.split( <span class="jxr_string">":"</span> );
+<a class="jxr_linenumber" name="L794" href="#L794">794</a>                 String groupId = gav[0];
+<a class="jxr_linenumber" name="L795" href="#L795">795</a>                 String artifactId = gav[1];
+<a class="jxr_linenumber" name="L796" href="#L796">796</a>                 String version = gav[2];
+<a class="jxr_linenumber" name="L797" href="#L797">797</a>                 Artifact scalacPluginArtifact = getResolvedArtifact( groupId, artifactId, version );
+<a class="jxr_linenumber" name="L798" href="#L798">798</a>                 <strong class="jxr_keyword">if</strong> ( scalacPluginArtifact != <strong class="jxr_keyword">null</strong> )
+<a class="jxr_linenumber" name="L799" href="#L799">799</a>                 {
+<a class="jxr_linenumber" name="L800" href="#L800">800</a>                     scalacPluginArtifacts.add( scalacPluginArtifact );
+<a class="jxr_linenumber" name="L801" href="#L801">801</a>                 }
+<a class="jxr_linenumber" name="L802" href="#L802">802</a>             }
+<a class="jxr_linenumber" name="L803" href="#L803">803</a>         }
+<a class="jxr_linenumber" name="L804" href="#L804">804</a>     }
+<a class="jxr_linenumber" name="L805" href="#L805">805</a> 
+<a class="jxr_linenumber" name="L806" href="#L806">806</a> }
 </pre>
 <hr/>
 <div id="footer">Copyright &#169; 2013&#x2013;2016. All rights reserved.</div>
