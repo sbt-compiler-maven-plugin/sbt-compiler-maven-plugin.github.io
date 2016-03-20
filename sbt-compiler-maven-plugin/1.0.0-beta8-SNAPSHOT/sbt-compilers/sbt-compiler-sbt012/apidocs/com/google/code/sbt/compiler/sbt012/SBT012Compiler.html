@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -172,18 +172,24 @@ extends <a href="https://sbt-compiler-maven-plugin.github.io/sbt-compiler-maven-
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/sbt012/SBT012Compiler.html#areSourcePositionMappersSupported--">areSourcePositionMappersSupported</a></span>()</code>
+<div class="block">Returns information if this compiler supports source position mappers.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/sbt012/SBT012Compiler.html#getDefaultSbtVersion--">getDefaultSbtVersion</a></span>()</code>
 <div class="block">Returns default SBT version for the compiler.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/sbt012/SBT012Compiler.html#getDefaultScalaVersion--">getDefaultScalaVersion</a></span>()</code>
 <div class="block">Returns default Scala version for the compiler.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://sbt-compiler-maven-plugin.github.io/sbt-compiler-maven-plugin/1.0.0-beta8-SNAPSHOT/sbt-compiler-api/apidocs/com/google/code/sbt/compiler/api/Analysis.html?is-external=true" title="class or interface in com.google.code.sbt.compiler.api">Analysis</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/sbt012/SBT012Compiler.html#performCompile-com.google.code.sbt.compiler.api.CompilerConfiguration-">performCompile</a></span>(<a href="https://sbt-compiler-maven-plugin.github.io/sbt-compiler-maven-plugin/1.0.0-beta8-SNAPSHOT/sbt-compiler-api/apidocs/com/google/code/sbt/compiler/api/CompilerConfiguration.html?is-external=true" title="class or interface in com.google.code.sbt.compiler.api">CompilerConfiguration</a>&nbsp;configuration)</code>
 <div class="block">Performs the compilation of the project.</div>
@@ -273,6 +279,20 @@ extends <a href="https://sbt-compiler-maven-plugin.github.io/sbt-compiler-maven-
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>default SBT version for the compiler</dd>
+</dl>
+</li>
+</ul>
+<a name="areSourcePositionMappersSupported--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>areSourcePositionMappersSupported</h4>
+<pre>public&nbsp;boolean&nbsp;areSourcePositionMappersSupported()</pre>
+<div class="block">Returns information if this compiler supports source position mappers.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>information if source position mappers are supported</dd>
 </dl>
 </li>
 </ul>

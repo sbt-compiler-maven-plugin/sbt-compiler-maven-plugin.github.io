@@ -51,10 +51,10 @@ digraph G {
 	c41:p -> c81:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo NAVASSOC com.google.code.sbt.compiler.api.Compiler
 	c41:p -> c82:p [taillabel="", label="", headlabel="*", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
-	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo DEPEND org.apache.maven.project.MavenProject
-	c41:p -> c76:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo DEPEND com.google.code.sbt.compiler.api.Compiler
 	c41:p -> c82:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo DEPEND org.apache.maven.project.MavenProject
+	c41:p -> c76:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo DEPEND org.apache.maven.artifact.Artifact
 	c41:p -> c51:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.sbt.compiler.plugin.AbstractSBTCompileMojo DEPEND org.apache.maven.artifact.resolver.filter.ArtifactFilter
