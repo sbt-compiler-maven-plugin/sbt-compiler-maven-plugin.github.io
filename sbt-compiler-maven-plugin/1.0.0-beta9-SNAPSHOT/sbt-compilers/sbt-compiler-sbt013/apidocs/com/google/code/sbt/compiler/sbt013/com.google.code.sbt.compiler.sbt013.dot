@@ -45,13 +45,5 @@ digraph G {
 <tr><td align="center" balign="center"> SBT013Analysis </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SBT013Analysis.html", fontname="arial", fontcolor="black", fontsize=9.0];
-	// com.google.code.sbt.compiler.sbt013.AbstractFunction1Impl<T1, R>
-	c6 [label=<<table title="com.google.code.sbt.compiler.sbt013.AbstractFunction1Impl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AbstractFunction1Impl.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"><font face="arial italic"> AbstractFunction1Impl&lt;T1, R&gt; </font></td></tr>
-		</table></td></tr>
-		</table>>, URL="./AbstractFunction1Impl.html", fontname="arial", fontcolor="black", fontsize=9.0];
-	//com.google.code.sbt.compiler.sbt013.SBT013SourcePositionMapper extends com.google.code.sbt.compiler.sbt013.AbstractFunction1Impl<xsbti.Position, xsbti.Position>
-	c6:p -> c0:p [dir=back,arrowtail=empty];
 }
 

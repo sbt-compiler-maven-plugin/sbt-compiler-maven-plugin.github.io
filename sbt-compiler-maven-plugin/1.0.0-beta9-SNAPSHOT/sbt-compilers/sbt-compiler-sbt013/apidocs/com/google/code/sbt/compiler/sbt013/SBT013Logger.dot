@@ -10,27 +10,27 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// com.google.code.sbt.compiler.sbt013.SBT013Logger
-	c86 [label=<<table title="com.google.code.sbt.compiler.sbt013.SBT013Logger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SBT013Logger.html">
+	c81 [label=<<table title="com.google.code.sbt.compiler.sbt013.SBT013Logger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SBT013Logger.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SBT013Logger </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SBT013Logger.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	//com.google.code.sbt.compiler.sbt013.SBT013Logger implements xsbti.Logger
-	c91:p -> c86:p [dir=back,arrowtail=empty,style=dashed];
+	c85:p -> c81:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.code.sbt.compiler.sbt013.SBT013Logger NAVASSOC com.google.code.sbt.compiler.api.CompilerLogger
-	c86:p -> c93:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c81:p -> c87:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.google.code.sbt.compiler.sbt013.SBT013Logger DEPEND xsbti.F0<T>
-	c86:p -> c94:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	c81:p -> c88:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.sbt.compiler.sbt013.SBT013Logger DEPEND xsbti.F0<T>
-	c86:p -> c94:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	c81:p -> c88:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.sbt.compiler.sbt013.SBT013Logger DEPEND xsbti.F0<T>
-	c86:p -> c94:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	c81:p -> c88:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.sbt.compiler.sbt013.SBT013Logger DEPEND xsbti.F0<T>
-	c86:p -> c94:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	c81:p -> c88:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.sbt.compiler.sbt013.SBT013Logger DEPEND xsbti.F0<T>
-	c86:p -> c94:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	c81:p -> c88:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.sbt.compiler.api.CompilerLogger
-	c93 [label=<<table title="com.google.code.sbt.compiler.api.CompilerLogger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c87 [label=<<table title="com.google.code.sbt.compiler.api.CompilerLogger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> CompilerLogger </td></tr>
@@ -38,7 +38,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
 	// xsbti.Logger
-	c91 [label=<<table title="xsbti.Logger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c85 [label=<<table title="xsbti.Logger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Logger </td></tr>
@@ -46,7 +46,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
 	// xsbti.F0<T>
-	c94 [label=<<table title="xsbti.F0" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c88 [label=<<table title="xsbti.F0" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> F0&lt;T&gt; </td></tr>

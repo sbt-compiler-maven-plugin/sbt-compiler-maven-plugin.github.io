@@ -10,17 +10,17 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// com.google.code.sbt.compiler.sbt012.SBT012Analysis
-	c23 [label=<<table title="com.google.code.sbt.compiler.sbt012.SBT012Analysis" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SBT012Analysis.html">
+	c26 [label=<<table title="com.google.code.sbt.compiler.sbt012.SBT012Analysis" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SBT012Analysis.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SBT012Analysis </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SBT012Analysis.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	//com.google.code.sbt.compiler.sbt012.SBT012Analysis implements com.google.code.sbt.compiler.api.Analysis
-	c24:p -> c23:p [dir=back,arrowtail=empty,style=dashed];
+	c27:p -> c26:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.code.sbt.compiler.sbt012.SBT012Analysis NAVASSOC sbt.inc.Analysis
-	c23:p -> c28:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c26:p -> c31:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// sbt.inc.Analysis
-	c28 [label=<<table title="sbt.inc.Analysis" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c31 [label=<<table title="sbt.inc.Analysis" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Analysis </td></tr>
@@ -28,7 +28,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.sbt.compiler.api.Analysis
-	c24 [label=<<table title="com.google.code.sbt.compiler.api.Analysis" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c27 [label=<<table title="com.google.code.sbt.compiler.api.Analysis" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Analysis </td></tr>

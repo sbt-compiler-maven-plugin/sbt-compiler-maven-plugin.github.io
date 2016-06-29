@@ -10,26 +10,48 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// com.google.code.sbt.compiler.sbt012.SBT012Compiler
-	c36 [label=<<table title="com.google.code.sbt.compiler.sbt012.SBT012Compiler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SBT012Compiler.html">
+	c39 [label=<<table title="com.google.code.sbt.compiler.sbt012.SBT012Compiler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SBT012Compiler.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SBT012Compiler </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SBT012Compiler.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	//com.google.code.sbt.compiler.sbt012.SBT012Compiler extends com.google.code.sbt.compiler.api.AbstractCompiler
-	c41:p -> c36:p [dir=back,arrowtail=empty];
-	// com.google.code.sbt.compiler.sbt012.SBT012Compiler DEPEND com.google.code.sbt.compiler.api.CompilerConfiguration
-	c36:p -> c44:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	c44:p -> c39:p [dir=back,arrowtail=empty];
+	// com.google.code.sbt.compiler.sbt012.SBT012Compiler DEPEND com.google.code.sbt.compiler.api.CompilationProblem
+	c39:p -> c45:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.sbt.compiler.sbt012.SBT012Compiler DEPEND com.google.code.sbt.compiler.api.Analysis
-	c36:p -> c45:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	c39:p -> c46:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// com.google.code.sbt.compiler.sbt012.SBT012Compiler DEPEND xsbti.Problem
+	c39:p -> c47:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// com.google.code.sbt.compiler.sbt012.SBT012Compiler DEPEND com.google.code.sbt.compiler.api.CompilationProblem
+	c39:p -> c45:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// com.google.code.sbt.compiler.sbt012.SBT012Compiler DEPEND com.google.code.sbt.compiler.api.CompilerConfiguration
+	c39:p -> c51:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// com.google.code.sbt.compiler.api.CompilationProblem
+	c45 [label=<<table title="com.google.code.sbt.compiler.api.CompilationProblem" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
+<tr><td align="center" balign="center"> CompilationProblem </td></tr>
+<tr><td align="center" balign="center"><font point-size="7.0"> com.google.code.sbt.compiler.api </font></td></tr>
+		</table></td></tr>
+		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
+	// xsbti.Problem
+	c47 [label=<<table title="xsbti.Problem" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
+<tr><td align="center" balign="center"> Problem </td></tr>
+<tr><td align="center" balign="center"><font point-size="7.0"> xsbti </font></td></tr>
+		</table></td></tr>
+		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.sbt.compiler.api.AbstractCompiler
-	c41 [label=<<table title="com.google.code.sbt.compiler.api.AbstractCompiler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c44 [label=<<table title="com.google.code.sbt.compiler.api.AbstractCompiler" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="arial italic"> AbstractCompiler </font></td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> com.google.code.sbt.compiler.api </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.sbt.compiler.api.Analysis
-	c45 [label=<<table title="com.google.code.sbt.compiler.api.Analysis" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c46 [label=<<table title="com.google.code.sbt.compiler.api.Analysis" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Analysis </td></tr>
@@ -37,7 +59,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.sbt.compiler.api.CompilerConfiguration
-	c44 [label=<<table title="com.google.code.sbt.compiler.api.CompilerConfiguration" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c51 [label=<<table title="com.google.code.sbt.compiler.api.CompilerConfiguration" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> CompilerConfiguration </td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> com.google.code.sbt.compiler.api </font></td></tr>

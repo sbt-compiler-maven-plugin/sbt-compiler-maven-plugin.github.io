@@ -104,6 +104,10 @@
 <dl>
 <dt><a href="com/google/code/sbt/compiler/api/package-summary.html">com.google.code.sbt.compiler.api</a> - package com.google.code.sbt.compiler.api</dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/google/code/sbt/compiler/api/CompilationProblem.html" title="interface in com.google.code.sbt.compiler.api"><span class="typeNameLink">CompilationProblem</span></a> - Interface in <a href="com/google/code/sbt/compiler/api/package-summary.html">com.google.code.sbt.compiler.api</a></dt>
+<dd>
+<div class="block">Compilation error/warning.</div>
+</dd>
 <dt><a href="com/google/code/sbt/compiler/api/Compiler.html" title="interface in com.google.code.sbt.compiler.api"><span class="typeNameLink">Compiler</span></a> - Interface in <a href="com/google/code/sbt/compiler/api/package-summary.html">com.google.code.sbt.compiler.api</a></dt>
 <dd>
 <div class="block">SBT compiler interface.</div>
@@ -122,7 +126,15 @@
 <dd>
 <div class="block">Constructs a new exception with the specified detail message.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilerException.html#CompilerException-java.lang.String-com.google.code.sbt.compiler.api.CompilationProblem:A-">CompilerException(String, CompilationProblem[])</a></span> - Constructor for exception com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilerException.html" title="class in com.google.code.sbt.compiler.api">CompilerException</a></dt>
+<dd>
+<div class="block">Constructs a new exception with the specified detail message.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilerException.html#CompilerException-java.lang.String-java.lang.Throwable-">CompilerException(String, Throwable)</a></span> - Constructor for exception com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilerException.html" title="class in com.google.code.sbt.compiler.api">CompilerException</a></dt>
+<dd>
+<div class="block">Constructs a new exception with the specified detail message and cause.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilerException.html#CompilerException-java.lang.String-java.lang.Throwable-com.google.code.sbt.compiler.api.CompilationProblem:A-">CompilerException(String, Throwable, CompilationProblem[])</a></span> - Constructor for exception com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilerException.html" title="class in com.google.code.sbt.compiler.api">CompilerException</a></dt>
 <dd>
 <div class="block">Constructs a new exception with the specified detail message and cause.</div>
 </dd>
@@ -147,6 +159,14 @@
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilerLogger.html#debug-java.lang.Throwable-">debug(Throwable)</a></span> - Method in interface com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilerLogger.html" title="interface in com.google.code.sbt.compiler.api">CompilerLogger</a></dt>
 <dd>
 <div class="block">Sends a throwable in the <b>debug</b> log level.</div>
+</dd>
+<dt><a href="com/google/code/sbt/compiler/api/DefaultCompilationProblem.html" title="class in com.google.code.sbt.compiler.api"><span class="typeNameLink">DefaultCompilationProblem</span></a> - Class in <a href="com/google/code/sbt/compiler/api/package-summary.html">com.google.code.sbt.compiler.api</a></dt>
+<dd>
+<div class="block">Compilation error/warning problem simple implementation.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/DefaultCompilationProblem.html#DefaultCompilationProblem-java.lang.String-java.lang.String-com.google.code.sbt.compiler.api.SourcePosition-java.lang.String-">DefaultCompilationProblem(String, String, SourcePosition, String)</a></span> - Constructor for class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/DefaultCompilationProblem.html" title="class in com.google.code.sbt.compiler.api">DefaultCompilationProblem</a></dt>
+<dd>
+<div class="block">Creates instance of compilation error/warning problem.</div>
 </dd>
 <dt><a href="com/google/code/sbt/compiler/api/DefaultSourcePosition.html" title="class in com.google.code.sbt.compiler.api"><span class="typeNameLink">DefaultSourcePosition</span></a> - Class in <a href="com/google/code/sbt/compiler/api/package-summary.html">com.google.code.sbt.compiler.api</a></dt>
 <dd>
@@ -183,6 +203,14 @@
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/Compilers.html#getCacheDirectory-java.io.File-">getCacheDirectory(File)</a></span> - Static method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/Compilers.html" title="class in com.google.code.sbt.compiler.api">Compilers</a></dt>
 <dd>
 <div class="block">Returns directory for incremental compilation cache files.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilationProblem.html#getCategory--">getCategory()</a></span> - Method in interface com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilationProblem.html" title="interface in com.google.code.sbt.compiler.api">CompilationProblem</a></dt>
+<dd>
+<div class="block">Problem category</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/DefaultCompilationProblem.html#getCategory--">getCategory()</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/DefaultCompilationProblem.html" title="class in com.google.code.sbt.compiler.api">DefaultCompilationProblem</a></dt>
+<dd>
+<div class="block">Problem category</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html#getClasspathFiles--">getClasspathFiles()</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html" title="class in com.google.code.sbt.compiler.api">CompilerConfiguration</a></dt>
 <dd>
@@ -240,6 +268,14 @@
 <dd>
 <div class="block">Returns logger providing compilation feedback.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilationProblem.html#getMessage--">getMessage()</a></span> - Method in interface com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilationProblem.html" title="interface in com.google.code.sbt.compiler.api">CompilationProblem</a></dt>
+<dd>
+<div class="block">Problem message</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/DefaultCompilationProblem.html#getMessage--">getMessage()</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/DefaultCompilationProblem.html" title="class in com.google.code.sbt.compiler.api">DefaultCompilationProblem</a></dt>
+<dd>
+<div class="block">Problem message</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/DefaultSourcePosition.html#getOffset--">getOffset()</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/DefaultSourcePosition.html" title="class in com.google.code.sbt.compiler.api">DefaultSourcePosition</a></dt>
 <dd>
 <div class="block">Zero-based offset in characters from the beginning of the file or value less than zero if not specified.</div>
@@ -260,6 +296,16 @@
 <dd>
 <div class="block">One-based position in the line or value less than one if position not specified.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilationProblem.html#getPosition--">getPosition()</a></span> - Method in interface com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilationProblem.html" title="interface in com.google.code.sbt.compiler.api">CompilationProblem</a></dt>
+<dd>
+<div class="block">Problem position</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/DefaultCompilationProblem.html#getPosition--">getPosition()</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/DefaultCompilationProblem.html" title="class in com.google.code.sbt.compiler.api">DefaultCompilationProblem</a></dt>
+<dd>
+<div class="block">Problem position</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilerException.html#getProblems--">getProblems()</a></span> - Method in exception com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilerException.html" title="class in com.google.code.sbt.compiler.api">CompilerException</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/Analysis.html#getProducts-java.io.File-">getProducts(File)</a></span> - Method in interface com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/Analysis.html" title="interface in com.google.code.sbt.compiler.api">Analysis</a></dt>
 <dd>
 <div class="block">Returns source file's compilation products (class files).</div>
@@ -279,6 +325,14 @@
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html#getScalaLibraryFile--">getScalaLibraryFile()</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html" title="class in com.google.code.sbt.compiler.api">CompilerConfiguration</a></dt>
 <dd>
 <div class="block">Returns Scala library <code>scala-library-&lt;version&gt;.jar</code> file.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilationProblem.html#getSeverity--">getSeverity()</a></span> - Method in interface com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilationProblem.html" title="interface in com.google.code.sbt.compiler.api">CompilationProblem</a></dt>
+<dd>
+<div class="block">Problem severity</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/DefaultCompilationProblem.html#getSeverity--">getSeverity()</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/DefaultCompilationProblem.html" title="class in com.google.code.sbt.compiler.api">DefaultCompilationProblem</a></dt>
+<dd>
+<div class="block">Problem severity</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html#getSourceEncoding--">getSourceEncoding()</a></span> - Method in class com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilerConfiguration.html" title="class in com.google.code.sbt.compiler.api">CompilerConfiguration</a></dt>
 <dd>

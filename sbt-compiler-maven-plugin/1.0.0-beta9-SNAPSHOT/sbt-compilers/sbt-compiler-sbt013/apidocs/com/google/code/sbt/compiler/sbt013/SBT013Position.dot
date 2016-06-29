@@ -10,36 +10,36 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// com.google.code.sbt.compiler.sbt013.SBT013Position
-	c96 [label=<<table title="com.google.code.sbt.compiler.sbt013.SBT013Position" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SBT013Position.html">
+	c90 [label=<<table title="com.google.code.sbt.compiler.sbt013.SBT013Position" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SBT013Position.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SBT013Position </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SBT013Position.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	//com.google.code.sbt.compiler.sbt013.SBT013Position implements xsbti.Position
-	c102:p -> c96:p [dir=back,arrowtail=empty,style=dashed];
+	c95:p -> c90:p [dir=back,arrowtail=empty,style=dashed];
 	// com.google.code.sbt.compiler.sbt013.SBT013Position NAVASSOC com.google.code.sbt.compiler.api.SourcePosition
-	c96:p -> c103:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c90:p -> c96:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.google.code.sbt.compiler.sbt013.SBT013Position DEPEND xsbti.Maybe<t>
-	c96:p -> c104:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	c90:p -> c97:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.sbt.compiler.sbt013.SBT013Position DEPEND xsbti.Maybe<t>
-	c96:p -> c104:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	c90:p -> c97:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.sbt.compiler.sbt013.SBT013Position DEPEND xsbti.Maybe<t>
-	c96:p -> c104:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	c90:p -> c97:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.sbt.compiler.sbt013.SBT013Position DEPEND xsbti.Maybe<t>
-	c96:p -> c104:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	c90:p -> c97:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.sbt.compiler.sbt013.SBT013Position DEPEND xsbti.Maybe<t>
-	c96:p -> c104:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	c90:p -> c97:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.sbt.compiler.sbt013.SBT013Position DEPEND xsbti.Maybe<t>
-	c96:p -> c104:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	c90:p -> c97:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// xsbti.Maybe<t>
-	c104 [label=<<table title="xsbti.Maybe" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c97 [label=<<table title="xsbti.Maybe" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="arial italic"> Maybe&lt;t&gt; </font></td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> xsbti </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.sbt.compiler.api.SourcePosition
-	c103 [label=<<table title="com.google.code.sbt.compiler.api.SourcePosition" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c96 [label=<<table title="com.google.code.sbt.compiler.api.SourcePosition" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> SourcePosition </td></tr>
@@ -47,7 +47,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
 	// xsbti.Position
-	c102 [label=<<table title="xsbti.Position" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c95 [label=<<table title="xsbti.Position" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Position </td></tr>

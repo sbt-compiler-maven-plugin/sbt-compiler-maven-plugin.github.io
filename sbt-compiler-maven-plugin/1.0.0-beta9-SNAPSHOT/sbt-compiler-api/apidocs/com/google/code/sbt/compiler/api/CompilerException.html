@@ -18,6 +18,12 @@
     catch(err) {
     }
 //-->
+var methods = {"i0":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -70,13 +76,13 @@
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Throwable">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -88,8 +94,10 @@
 <div class="subTitle">com.google.code.sbt.compiler.api</div>
 <h2 title="Class CompilerException" class="title">Class CompilerException</h2>
 <map id="G" name="G">
-<area shape="rect" id="c90" href="./CompilerException.html" title="com.google.code.sbt.compiler.api.CompilerException" alt="" coords="16,17,139,41"/>
-<area shape="rect" id="node1" href="./CompilerException.html" title="&lt;TABLE&gt;" alt="" coords="5,5,149,53"/>
+<area shape="rect" id="c119" href="./CompilerException.html" title="com.google.code.sbt.compiler.api.CompilerException" alt="" coords="21,17,144,41"/>
+<area shape="rect" id="node1" href="./CompilerException.html" title="&lt;TABLE&gt;" alt="" coords="11,5,155,53"/>
+<area shape="rect" id="c122" href="./CompilationProblem.html" title="com.google.code.sbt.compiler.api.CompilationProblem" alt="" coords="16,107,149,146"/>
+<area shape="rect" id="node2" href="./CompilationProblem.html" title="&lt;TABLE&gt;" alt="" coords="5,102,160,151"/>
 </map>
 <!-- UML diagram added by UMLGraph version R5_6-24-gf6e263 (http://www.umlgraph.org/) -->
 <div align="center"><img src="CompilerException.png" alt="Package class diagram package CompilerException" usemap="#G" border=0/></div>
@@ -153,8 +161,21 @@ extends <a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/Exceptio
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/api/CompilerException.html#CompilerException-java.lang.String-com.google.code.sbt.compiler.api.CompilationProblem:A-">CompilerException</a></span>(<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+                 <a href="../../../../../../com/google/code/sbt/compiler/api/CompilationProblem.html" title="interface in com.google.code.sbt.compiler.api">CompilationProblem</a>[]&nbsp;problems)</code>
+<div class="block">Constructs a new exception with the specified detail message.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/api/CompilerException.html#CompilerException-java.lang.String-java.lang.Throwable-">CompilerException</a></span>(<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
                  <a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;cause)</code>
+<div class="block">Constructs a new exception with the specified detail message and cause.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/api/CompilerException.html#CompilerException-java.lang.String-java.lang.Throwable-com.google.code.sbt.compiler.api.CompilationProblem:A-">CompilerException</a></span>(<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+                 <a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;cause,
+                 <a href="../../../../../../com/google/code/sbt/compiler/api/CompilationProblem.html" title="interface in com.google.code.sbt.compiler.api">CompilationProblem</a>[]&nbsp;problems)</code>
 <div class="block">Constructs a new exception with the specified detail message and cause.</div>
 </td>
 </tr>
@@ -167,6 +188,17 @@ extends <a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/Exceptio
 <!--   -->
 </a>
 <h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../com/google/code/sbt/compiler/api/CompilationProblem.html" title="interface in com.google.code.sbt.compiler.api">CompilationProblem</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/sbt/compiler/api/CompilerException.html#getProblems--">getProblems</a></span>()</code>&nbsp;</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Throwable">
 <!--   -->
@@ -209,10 +241,26 @@ extends <a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/Exceptio
 </dl>
 </li>
 </ul>
+<a name="CompilerException-java.lang.String-com.google.code.sbt.compiler.api.CompilationProblem:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CompilerException</h4>
+<pre>public&nbsp;CompilerException(<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+                         <a href="../../../../../../com/google/code/sbt/compiler/api/CompilationProblem.html" title="interface in com.google.code.sbt.compiler.api">CompilationProblem</a>[]&nbsp;problems)</pre>
+<div class="block">Constructs a new exception with the specified detail message.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - exception detail message</dd>
+<dd><code>problems</code> - compilation problems</dd>
+</dl>
+</li>
+</ul>
 <a name="CompilerException-java.lang.String-java.lang.Throwable-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>CompilerException</h4>
 <pre>public&nbsp;CompilerException(<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
@@ -223,6 +271,41 @@ extends <a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/Exceptio
 <dd><code>message</code> - exception detail message</dd>
 <dd><code>cause</code> - exception cause (nested throwable)</dd>
 </dl>
+</li>
+</ul>
+<a name="CompilerException-java.lang.String-java.lang.Throwable-com.google.code.sbt.compiler.api.CompilationProblem:A-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>CompilerException</h4>
+<pre>public&nbsp;CompilerException(<a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+                         <a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</a>&nbsp;cause,
+                         <a href="../../../../../../com/google/code/sbt/compiler/api/CompilationProblem.html" title="interface in com.google.code.sbt.compiler.api">CompilationProblem</a>[]&nbsp;problems)</pre>
+<div class="block">Constructs a new exception with the specified detail message and cause.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - exception detail message</dd>
+<dd><code>cause</code> - exception cause (nested throwable)</dd>
+<dd><code>problems</code> - compilation problems</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getProblems--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getProblems</h4>
+<pre>public&nbsp;<a href="../../../../../../com/google/code/sbt/compiler/api/CompilationProblem.html" title="interface in com.google.code.sbt.compiler.api">CompilationProblem</a>[]&nbsp;getProblems()</pre>
 </li>
 </ul>
 </li>
@@ -280,13 +363,13 @@ extends <a href="http://docs.oracle.com/javase/1.6.0/docs/api/java/lang/Exceptio
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Throwable">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">

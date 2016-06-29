@@ -1,8 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="c74" href="./SourcePositionMapper.html" title="com.google.code.sbt.compiler.api.SourcePositionMapper" alt="" coords="16,107,160,146"/>
+<area shape="rect" id="c100" href="./SourcePositionMapper.html" title="com.google.code.sbt.compiler.api.SourcePositionMapper" alt="" coords="16,107,160,146"/>
 <area shape="rect" id="node1" href="./SourcePositionMapper.html" title="&lt;TABLE&gt;" alt="" coords="5,102,171,151"/>
-<area shape="rect" id="c78" href="./CompilerLogger.html" title="com.google.code.sbt.compiler.api.CompilerLogger" alt="" coords="205,107,315,146"/>
+<area shape="rect" id="c105" href="./CompilerLogger.html" title="com.google.code.sbt.compiler.api.CompilerLogger" alt="" coords="205,107,315,146"/>
 <area shape="rect" id="node2" href="./CompilerLogger.html" title="&lt;TABLE&gt;" alt="" coords="195,102,325,151"/>
-<area shape="rect" id="c80" href="./CompilerConfiguration.html" title="com.google.code.sbt.compiler.api.CompilerConfiguration" alt="" coords="101,17,245,41"/>
+<area shape="rect" id="c107" href="./CompilerConfiguration.html" title="com.google.code.sbt.compiler.api.CompilerConfiguration" alt="" coords="101,17,245,41"/>
 <area shape="rect" id="node3" href="./CompilerConfiguration.html" title="&lt;TABLE&gt;" alt="" coords="91,5,256,53"/>
 </map>

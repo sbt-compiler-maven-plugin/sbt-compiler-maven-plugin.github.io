@@ -10,19 +10,27 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// com.google.code.sbt.compiler.api.SourcePosition
-	c130 [label=<<table title="com.google.code.sbt.compiler.api.SourcePosition" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SourcePosition.html">
+	c179 [label=<<table title="com.google.code.sbt.compiler.api.SourcePosition" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SourcePosition.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> SourcePosition </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SourcePosition.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.sbt.compiler.api.DefaultSourcePosition
-	c131 [label=<<table title="com.google.code.sbt.compiler.api.DefaultSourcePosition" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DefaultSourcePosition.html">
+	c180 [label=<<table title="com.google.code.sbt.compiler.api.DefaultSourcePosition" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DefaultSourcePosition.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DefaultSourcePosition </td></tr>
 		</table></td></tr>
 		</table>>, URL="./DefaultSourcePosition.html", fontname="arial", fontcolor="black", fontsize=9.0];
+	// com.google.code.sbt.compiler.api.DefaultCompilationProblem
+	c181 [label=<<table title="com.google.code.sbt.compiler.api.DefaultCompilationProblem" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./DefaultCompilationProblem.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> DefaultCompilationProblem </td></tr>
+		</table></td></tr>
+		</table>>, URL="./DefaultCompilationProblem.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	//com.google.code.sbt.compiler.api.DefaultSourcePosition implements com.google.code.sbt.compiler.api.SourcePosition
-	c130:p -> c131:p [dir=back,arrowtail=empty,style=dashed];
+	c179:p -> c180:p [dir=back,arrowtail=empty,style=dashed];
+	// com.google.code.sbt.compiler.api.DefaultCompilationProblem NAVASSOC com.google.code.sbt.compiler.api.SourcePosition
+	c181:p -> c179:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

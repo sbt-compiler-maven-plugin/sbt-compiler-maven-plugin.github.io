@@ -1,16 +1,14 @@
 <map id="G" name="G">
-<area shape="rect" id="c0" href="./SBT013SourcePositionMapper.html" title="com.google.code.sbt.compiler.sbt013.SBT013SourcePositionMapper" alt="" coords="15,113,203,137"/>
-<area shape="rect" id="node1" href="./SBT013SourcePositionMapper.html" title="&lt;TABLE&gt;" alt="" coords="5,101,213,149"/>
-<area shape="rect" id="c1" href="./SBT013Position.html" title="com.google.code.sbt.compiler.sbt013.SBT013Position" alt="" coords="246,17,354,41"/>
-<area shape="rect" id="node2" href="./SBT013Position.html" title="&lt;TABLE&gt;" alt="" coords="236,5,364,53"/>
-<area shape="rect" id="c2" href="./SBT013Logger.html" title="com.google.code.sbt.compiler.sbt013.SBT013Logger" alt="" coords="399,17,500,41"/>
-<area shape="rect" id="node3" href="./SBT013Logger.html" title="&lt;TABLE&gt;" alt="" coords="388,5,511,53"/>
-<area shape="rect" id="c3" href="./SBT013Compiler.html" title="com.google.code.sbt.compiler.sbt013.SBT013Compiler" alt="" coords="545,17,658,41"/>
-<area shape="rect" id="node4" href="./SBT013Compiler.html" title="&lt;TABLE&gt;" alt="" coords="535,5,668,53"/>
-<area shape="rect" id="c4" href="./SBT013AnalysisProcessor.html" title="com.google.code.sbt.compiler.sbt013.SBT013AnalysisProcessor" alt="" coords="703,17,868,41"/>
-<area shape="rect" id="node5" href="./SBT013AnalysisProcessor.html" title="&lt;TABLE&gt;" alt="" coords="692,5,879,53"/>
-<area shape="rect" id="c5" href="./SBT013Analysis.html" title="com.google.code.sbt.compiler.sbt013.SBT013Analysis" alt="" coords="913,17,1023,41"/>
-<area shape="rect" id="node6" href="./SBT013Analysis.html" title="&lt;TABLE&gt;" alt="" coords="903,5,1033,53"/>
-<area shape="rect" id="c6" href="./AbstractFunction1Impl.html" title="com.google.code.sbt.compiler.sbt013.AbstractFunction1Impl" alt="" coords="17,17,202,41"/>
-<area shape="rect" id="node7" href="./AbstractFunction1Impl.html" title="&lt;TABLE&gt;" alt="" coords="7,5,212,53"/>
+<area shape="rect" id="c0" href="./SBT013SourcePositionMapper.html" title="com.google.code.sbt.compiler.sbt013.SBT013SourcePositionMapper" alt="" coords="15,17,203,41"/>
+<area shape="rect" id="node1" href="./SBT013SourcePositionMapper.html" title="&lt;TABLE&gt;" alt="" coords="5,5,213,53"/>
+<area shape="rect" id="c1" href="./SBT013Position.html" title="com.google.code.sbt.compiler.sbt013.SBT013Position" alt="" coords="247,17,355,41"/>
+<area shape="rect" id="node2" href="./SBT013Position.html" title="&lt;TABLE&gt;" alt="" coords="237,5,365,53"/>
+<area shape="rect" id="c2" href="./SBT013Logger.html" title="com.google.code.sbt.compiler.sbt013.SBT013Logger" alt="" coords="400,17,501,41"/>
+<area shape="rect" id="node3" href="./SBT013Logger.html" title="&lt;TABLE&gt;" alt="" coords="389,5,512,53"/>
+<area shape="rect" id="c3" href="./SBT013Compiler.html" title="com.google.code.sbt.compiler.sbt013.SBT013Compiler" alt="" coords="546,17,659,41"/>
+<area shape="rect" id="node4" href="./SBT013Compiler.html" title="&lt;TABLE&gt;" alt="" coords="536,5,669,53"/>
+<area shape="rect" id="c4" href="./SBT013AnalysisProcessor.html" title="com.google.code.sbt.compiler.sbt013.SBT013AnalysisProcessor" alt="" coords="704,17,869,41"/>
+<area shape="rect" id="node5" href="./SBT013AnalysisProcessor.html" title="&lt;TABLE&gt;" alt="" coords="693,5,880,53"/>
+<area shape="rect" id="c5" href="./SBT013Analysis.html" title="com.google.code.sbt.compiler.sbt013.SBT013Analysis" alt="" coords="915,17,1024,41"/>
+<area shape="rect" id="node6" href="./SBT013Analysis.html" title="&lt;TABLE&gt;" alt="" coords="904,5,1035,53"/>
 </map>

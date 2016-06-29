@@ -10,27 +10,21 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// com.google.code.sbt.compiler.sbt013.SBT013SourcePositionMapper
-	c105 [label=<<table title="com.google.code.sbt.compiler.sbt013.SBT013SourcePositionMapper" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SBT013SourcePositionMapper.html">
+	c98 [label=<<table title="com.google.code.sbt.compiler.sbt013.SBT013SourcePositionMapper" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SBT013SourcePositionMapper.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> SBT013SourcePositionMapper </td></tr>
 		</table></td></tr>
 		</table>>, URL="./SBT013SourcePositionMapper.html", fontname="arial", fontcolor="black", fontsize=9.0];
-	// com.google.code.sbt.compiler.sbt013.AbstractFunction1Impl<T1, R>
-	c111 [label=<<table title="com.google.code.sbt.compiler.sbt013.AbstractFunction1Impl" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AbstractFunction1Impl.html">
-		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"><font face="arial italic"> AbstractFunction1Impl&lt;T1, R&gt; </font></td></tr>
-		</table></td></tr>
-		</table>>, URL="./AbstractFunction1Impl.html", fontname="arial", fontcolor="black", fontsize=9.0];
-	//com.google.code.sbt.compiler.sbt013.SBT013SourcePositionMapper extends com.google.code.sbt.compiler.sbt013.AbstractFunction1Impl<xsbti.Position, xsbti.Position>
-	c111:p -> c105:p [dir=back,arrowtail=empty];
+	//com.google.code.sbt.compiler.sbt013.SBT013SourcePositionMapper extends scala.runtime.AbstractFunction1<xsbti.Position, xsbti.Position>
+	c104:p -> c98:p [dir=back,arrowtail=empty];
 	// com.google.code.sbt.compiler.sbt013.SBT013SourcePositionMapper NAVASSOC com.google.code.sbt.compiler.api.SourcePositionMapper
-	c105:p -> c112:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c98:p -> c105:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.google.code.sbt.compiler.sbt013.SBT013SourcePositionMapper NAVASSOC com.google.code.sbt.compiler.api.CompilerLogger
-	c105:p -> c113:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c98:p -> c106:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.google.code.sbt.compiler.sbt013.SBT013SourcePositionMapper DEPEND xsbti.Position
-	c105:p -> c114:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	c98:p -> c107:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// xsbti.Position
-	c114 [label=<<table title="xsbti.Position" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c107 [label=<<table title="xsbti.Position" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Position </td></tr>
@@ -38,15 +32,22 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.sbt.compiler.api.CompilerLogger
-	c113 [label=<<table title="com.google.code.sbt.compiler.api.CompilerLogger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c106 [label=<<table title="com.google.code.sbt.compiler.api.CompilerLogger" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> CompilerLogger </td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> com.google.code.sbt.compiler.api </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
+	// scala.runtime.AbstractFunction1<T1, R>
+	c104 [label=<<table title="scala.runtime.AbstractFunction1" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"><font face="arial italic"> AbstractFunction1&lt;T1, R&gt; </font></td></tr>
+<tr><td align="center" balign="center"><font point-size="7.0"> scala.runtime </font></td></tr>
+		</table></td></tr>
+		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.sbt.compiler.api.SourcePositionMapper
-	c112 [label=<<table title="com.google.code.sbt.compiler.api.SourcePositionMapper" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c105 [label=<<table title="com.google.code.sbt.compiler.api.SourcePositionMapper" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> SourcePositionMapper </td></tr>
