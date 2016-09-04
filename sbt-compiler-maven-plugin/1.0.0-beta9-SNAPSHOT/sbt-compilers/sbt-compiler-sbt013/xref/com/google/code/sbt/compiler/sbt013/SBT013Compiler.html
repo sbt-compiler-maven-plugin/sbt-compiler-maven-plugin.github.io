@@ -59,11 +59,11 @@
 <a class="jxr_linenumber" name="L51" href="#L51">51</a>  <strong class="jxr_keyword">import</strong> com.typesafe.zinc.Setup;
 <a class="jxr_linenumber" name="L52" href="#L52">52</a>  
 <a class="jxr_linenumber" name="L53" href="#L53">53</a>  <em class="jxr_javadoccomment">/**</em>
-<a class="jxr_linenumber" name="L54" href="#L54">54</a>  <em class="jxr_javadoccomment"> * SBT 0.13.x compatible compiler (uses &lt;a href="https://github.com/typesafehub/zinc"&gt;Zinc&lt;/a&gt; 0.3.9)</em>
+<a class="jxr_linenumber" name="L54" href="#L54">54</a>  <em class="jxr_javadoccomment"> * SBT 0.13.x compatible compiler (uses &lt;a href="https://github.com/typesafehub/zinc"&gt;Zinc&lt;/a&gt; 0.3.12)</em>
 <a class="jxr_linenumber" name="L55" href="#L55">55</a>  <em class="jxr_javadoccomment"> * </em>
 <a class="jxr_linenumber" name="L56" href="#L56">56</a>  <em class="jxr_javadoccomment"> * @author &lt;a href="<a href="mailto:gslowikowski@gmail.com" target="alexandria_uri">mailto:gslowikowski@gmail.com</a>"&gt;Grzegorz Slowikowski&lt;/a&gt;</em>
 <a class="jxr_linenumber" name="L57" href="#L57">57</a>  <em class="jxr_javadoccomment"> */</em>
-<a class="jxr_linenumber" name="L58" href="#L58">58</a>  @Component( role = com.google.code.sbt.compiler.api.Compiler.<strong class="jxr_keyword">class</strong>, hint = <span class="jxr_string">"sbt013"</span>, description = <span class="jxr_string">"SBT 0.13.x compiler (uses Zinc 0.3.9)"</span> )
+<a class="jxr_linenumber" name="L58" href="#L58">58</a>  @Component( role = com.google.code.sbt.compiler.api.Compiler.<strong class="jxr_keyword">class</strong>, hint = <span class="jxr_string">"sbt013"</span>, description = <span class="jxr_string">"SBT 0.13.x compiler (uses Zinc 0.3.12)"</span> )
 <a class="jxr_linenumber" name="L59" href="#L59">59</a>  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../../../com/google/code/sbt/compiler/sbt013/SBT013Compiler.html">SBT013Compiler</a>
 <a class="jxr_linenumber" name="L60" href="#L60">60</a>      <strong class="jxr_keyword">extends</strong> AbstractCompiler
 <a class="jxr_linenumber" name="L61" href="#L61">61</a>  {
@@ -92,7 +92,7 @@
 <a class="jxr_linenumber" name="L84" href="#L84">84</a>      @Override
 <a class="jxr_linenumber" name="L85" href="#L85">85</a>      <strong class="jxr_keyword">public</strong> String getDefaultSbtVersion()
 <a class="jxr_linenumber" name="L86" href="#L86">86</a>      {
-<a class="jxr_linenumber" name="L87" href="#L87">87</a>          <strong class="jxr_keyword">return</strong> <span class="jxr_string">"0.13.9"</span>;
+<a class="jxr_linenumber" name="L87" href="#L87">87</a>          <strong class="jxr_keyword">return</strong> <span class="jxr_string">"0.13.12"</span>;
 <a class="jxr_linenumber" name="L88" href="#L88">88</a>      }
 <a class="jxr_linenumber" name="L89" href="#L89">89</a>  
 <a class="jxr_linenumber" name="L90" href="#L90">90</a>      <em class="jxr_javadoccomment">/**</em>
