@@ -17,20 +17,20 @@ digraph G {
 		</table>>, URL="./SBT013Compiler.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	//com.google.code.sbt.compiler.sbt013.SBT013Compiler extends com.google.code.sbt.compiler.api.AbstractCompiler
 	c66:p -> c61:p [dir=back,arrowtail=empty];
-	// com.google.code.sbt.compiler.sbt013.SBT013Compiler DEPEND com.google.code.sbt.compiler.api.CompilerConfiguration
-	c61:p -> c69:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
-	// com.google.code.sbt.compiler.sbt013.SBT013Compiler DEPEND com.google.code.sbt.compiler.api.CompilationProblem
-	c61:p -> c70:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
-	// com.google.code.sbt.compiler.sbt013.SBT013Compiler DEPEND com.google.code.sbt.compiler.api.Analysis
-	c61:p -> c71:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
-	// com.google.code.sbt.compiler.sbt013.SBT013Compiler DEPEND com.google.code.sbt.compiler.api.CompilationProblem
-	c61:p -> c70:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
-	// com.google.code.sbt.compiler.sbt013.SBT013Compiler DEPEND xsbti.Problem
-	c61:p -> c72:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.sbt.compiler.sbt013.SBT013Compiler DEPEND com.typesafe.zinc.IncOptions
+	c61:p -> c72:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// com.google.code.sbt.compiler.sbt013.SBT013Compiler DEPEND com.google.code.sbt.compiler.api.CompilationProblem
+	c61:p -> c73:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// com.google.code.sbt.compiler.sbt013.SBT013Compiler DEPEND xsbti.Problem
+	c61:p -> c74:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// com.google.code.sbt.compiler.sbt013.SBT013Compiler DEPEND com.google.code.sbt.compiler.api.Analysis
+	c61:p -> c75:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// com.google.code.sbt.compiler.sbt013.SBT013Compiler DEPEND com.google.code.sbt.compiler.api.CompilationProblem
+	c61:p -> c73:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// com.google.code.sbt.compiler.sbt013.SBT013Compiler DEPEND com.google.code.sbt.compiler.api.CompilerConfiguration
 	c61:p -> c78:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.sbt.compiler.api.CompilationProblem
-	c70 [label=<<table title="com.google.code.sbt.compiler.api.CompilationProblem" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c73 [label=<<table title="com.google.code.sbt.compiler.api.CompilationProblem" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> CompilationProblem </td></tr>
@@ -45,14 +45,14 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.typesafe.zinc.IncOptions
-	c78 [label=<<table title="com.typesafe.zinc.IncOptions" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c72 [label=<<table title="com.typesafe.zinc.IncOptions" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> IncOptions </td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> com.typesafe.zinc </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
 	// xsbti.Problem
-	c72 [label=<<table title="xsbti.Problem" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c74 [label=<<table title="xsbti.Problem" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Problem </td></tr>
@@ -60,7 +60,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.sbt.compiler.api.Analysis
-	c71 [label=<<table title="com.google.code.sbt.compiler.api.Analysis" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c75 [label=<<table title="com.google.code.sbt.compiler.api.Analysis" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Analysis </td></tr>
@@ -68,7 +68,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.sbt.compiler.api.CompilerConfiguration
-	c69 [label=<<table title="com.google.code.sbt.compiler.api.CompilerConfiguration" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c78 [label=<<table title="com.google.code.sbt.compiler.api.CompilerConfiguration" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> CompilerConfiguration </td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> com.google.code.sbt.compiler.api </font></td></tr>

@@ -92,10 +92,6 @@
 <div class="block">Returns information if this compiler stores class file time stamps
  in the incremental compilation analysis.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/Compiler.html#areSourcePositionMappersSupported--">areSourcePositionMappersSupported()</a></span> - Method in interface com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/Compiler.html" title="interface in com.google.code.sbt.compiler.api">Compiler</a></dt>
-<dd>
-<div class="block">Returns information if this compiler supports source position mappers.</div>
-</dd>
 </dl>
 <a name="I:C">
 <!--   -->
@@ -305,7 +301,9 @@
 <div class="block">Problem position</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/CompilerException.html#getProblems--">getProblems()</a></span> - Method in exception com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/CompilerException.html" title="class in com.google.code.sbt.compiler.api">CompilerException</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns compilation problems.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/Analysis.html#getProducts-java.io.File-">getProducts(File)</a></span> - Method in interface com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/Analysis.html" title="interface in com.google.code.sbt.compiler.api">Analysis</a></dt>
 <dd>
 <div class="block">Returns source file's compilation products (class files).</div>
@@ -496,6 +494,10 @@
 <dt><a href="com/google/code/sbt/compiler/api/SourcePositionMapper.html" title="interface in com.google.code.sbt.compiler.api"><span class="typeNameLink">SourcePositionMapper</span></a> - Interface in <a href="com/google/code/sbt/compiler/api/package-summary.html">com.google.code.sbt.compiler.api</a></dt>
 <dd>
 <div class="block">Mapper converting positions in generated source files to positions in original sources they were generated from.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/api/Compiler.html#supportsSourcePositionMappers--">supportsSourcePositionMappers()</a></span> - Method in interface com.google.code.sbt.compiler.api.<a href="com/google/code/sbt/compiler/api/Compiler.html" title="interface in com.google.code.sbt.compiler.api">Compiler</a></dt>
+<dd>
+<div class="block">Returns information if this compiler supports source position mappers.</div>
 </dd>
 </dl>
 <a name="I:U">

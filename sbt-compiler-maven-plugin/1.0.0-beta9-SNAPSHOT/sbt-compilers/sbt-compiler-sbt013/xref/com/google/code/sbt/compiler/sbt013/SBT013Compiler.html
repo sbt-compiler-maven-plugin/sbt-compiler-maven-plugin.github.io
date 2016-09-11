@@ -99,7 +99,7 @@
 <a class="jxr_linenumber" name="L91" href="#L91">91</a>  <em class="jxr_javadoccomment">     * {@inheritDoc}</em>
 <a class="jxr_linenumber" name="L92" href="#L92">92</a>  <em class="jxr_javadoccomment">     */</em>
 <a class="jxr_linenumber" name="L93" href="#L93">93</a>      @Override
-<a class="jxr_linenumber" name="L94" href="#L94">94</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">boolean</strong> areSourcePositionMappersSupported()
+<a class="jxr_linenumber" name="L94" href="#L94">94</a>      <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">boolean</strong> supportsSourcePositionMappers()
 <a class="jxr_linenumber" name="L95" href="#L95">95</a>      {
 <a class="jxr_linenumber" name="L96" href="#L96">96</a>          <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">true</strong>;
 <a class="jxr_linenumber" name="L97" href="#L97">97</a>      }
@@ -127,8 +127,8 @@
 <a class="jxr_linenumber" name="L119" href="#L119">119</a>             Inputs.create( configuration.getClasspathFiles(), configuration.getSourceFiles(),
 <a class="jxr_linenumber" name="L120" href="#L120">120</a>                            configuration.getOutputDirectory(), resolveScalacOptions( configuration ),
 <a class="jxr_linenumber" name="L121" href="#L121">121</a>                            resolveJavacOptions( configuration ), configuration.getAnalysisCacheFile(),
-<a class="jxr_linenumber" name="L122" href="#L122">122</a>                            configuration.getAnalysisCacheMap(), SBT013Compiler.COMPILE_ORDER, getIncOptions( configuration ),
-<a class="jxr_linenumber" name="L123" href="#L123">123</a>                            false <em class="jxr_comment">/* mirrorAnalysisCache */</em> );
+<a class="jxr_linenumber" name="L122" href="#L122">122</a>                            configuration.getAnalysisCacheMap(), SBT013Compiler.COMPILE_ORDER,
+<a class="jxr_linenumber" name="L123" href="#L123">123</a>                            getIncOptions( configuration ), false <em class="jxr_comment">/* mirrorAnalysisCache */</em> );
 <a class="jxr_linenumber" name="L124" href="#L124">124</a>         <strong class="jxr_keyword">if</strong> ( logger.isDebugEnabled() )
 <a class="jxr_linenumber" name="L125" href="#L125">125</a>         {
 <a class="jxr_linenumber" name="L126" href="#L126">126</a>             Inputs.debug( inputs, sbtLogger );
@@ -215,13 +215,13 @@
 <a class="jxr_linenumber" name="L207" href="#L207">207</a> 
 <a class="jxr_linenumber" name="L208" href="#L208">208</a>         <em class="jxr_comment">// comment from Zinc (com.typesafe.zinc.Settings.scala):</em>
 <a class="jxr_linenumber" name="L209" href="#L209">209</a>         <em class="jxr_comment">// Restore previous class files on failure</em>
-<a class="jxr_linenumber" name="L210" href="#L210">210</a>         <strong class="jxr_keyword">boolean</strong> transactional = <strong class="jxr_keyword">true</strong>; <em class="jxr_comment">//GS-TEST false;</em>
+<a class="jxr_linenumber" name="L210" href="#L210">210</a>         <strong class="jxr_keyword">boolean</strong> transactional = <strong class="jxr_keyword">true</strong>;
 <a class="jxr_linenumber" name="L211" href="#L211">211</a> 
 <a class="jxr_linenumber" name="L212" href="#L212">212</a>         <em class="jxr_comment">// comment from Zinc (com.typesafe.zinc.Settings.scala):</em>
 <a class="jxr_linenumber" name="L213" href="#L213">213</a>         <em class="jxr_comment">// Backup location (if transactional)</em>
 <a class="jxr_linenumber" name="L214" href="#L214">214</a>         Option&lt;File&gt; backup =
 <a class="jxr_linenumber" name="L215" href="#L215">215</a>             Option.apply( <strong class="jxr_keyword">new</strong> File( configuration.getOutputDirectory().getParentFile(),
-<a class="jxr_linenumber" name="L216" href="#L216">216</a>                                     configuration.getOutputDirectory().getName() + <span class="jxr_string">".bak"</span> ) ); <em class="jxr_comment">// GS-TEST Option.empty();</em>
+<a class="jxr_linenumber" name="L216" href="#L216">216</a>                                     configuration.getOutputDirectory().getName() + <span class="jxr_string">".bak"</span> ) );
 <a class="jxr_linenumber" name="L217" href="#L217">217</a> 
 <a class="jxr_linenumber" name="L218" href="#L218">218</a>         <em class="jxr_comment">// comment from SBT (sbt.inc.IncOptions scala):</em>
 <a class="jxr_linenumber" name="L219" href="#L219">219</a>         <em class="jxr_comment">// Determines whether incremental compiler should recompile all dependencies of a file</em>
