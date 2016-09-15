@@ -9,12 +9,12 @@ digraph G {
 	node [fontname="arial",fontsize=10,shape=plaintext];
 	nodesep=0.25;
 	ranksep=0.5;
-	// com.google.code.sbt.compiler.plugin.SourcePositionMapperAggregator
-	c0 [label=<<table title="com.google.code.sbt.compiler.plugin.SourcePositionMapperAggregator" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SourcePositionMapperAggregator.html">
+	// com.google.code.sbt.compiler.plugin.SourcePositionMapperCollection
+	c0 [label=<<table title="com.google.code.sbt.compiler.plugin.SourcePositionMapperCollection" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SourcePositionMapperCollection.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"> SourcePositionMapperAggregator </td></tr>
+<tr><td align="center" balign="center"> SourcePositionMapperCollection </td></tr>
 		</table></td></tr>
-		</table>>, URL="./SourcePositionMapperAggregator.html", fontname="arial", fontcolor="black", fontsize=9.0];
+		</table>>, URL="./SourcePositionMapperCollection.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.sbt.compiler.plugin.SBTTestCompileMojo
 	c1 [label=<<table title="com.google.code.sbt.compiler.plugin.SBTTestCompileMojo" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SBTTestCompileMojo.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">

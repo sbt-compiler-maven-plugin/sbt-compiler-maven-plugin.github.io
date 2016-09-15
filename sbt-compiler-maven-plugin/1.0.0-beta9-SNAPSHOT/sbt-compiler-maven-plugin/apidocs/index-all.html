@@ -303,7 +303,7 @@
 </a>
 <h2 class="title">M</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/plugin/SourcePositionMapperAggregator.html#map-com.google.code.sbt.compiler.api.SourcePosition-">map(SourcePosition)</a></span> - Method in class com.google.code.sbt.compiler.plugin.<a href="com/google/code/sbt/compiler/plugin/SourcePositionMapperAggregator.html" title="class in com.google.code.sbt.compiler.plugin">SourcePositionMapperAggregator</a></dt>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/plugin/SourcePositionMapperCollection.html#map-com.google.code.sbt.compiler.api.SourcePosition-">map(SourcePosition)</a></span> - Method in class com.google.code.sbt.compiler.plugin.<a href="com/google/code/sbt/compiler/plugin/SourcePositionMapperCollection.html" title="class in com.google.code.sbt.compiler.plugin">SourcePositionMapperCollection</a></dt>
 <dd>
 <div class="block">Performs mapping from the position in generated source file to the position in original source file it was
  generated from.</div>
@@ -380,13 +380,13 @@
 <dd>&nbsp;</dd>
 <dt><a href="com/google/code/sbt/compiler/plugin/SBTCompileMojo.html" title="class in com.google.code.sbt.compiler.plugin"><span class="typeNameLink">SBTCompileMojo</span></a> - Class in <a href="com/google/code/sbt/compiler/plugin/package-summary.html">com.google.code.sbt.compiler.plugin</a></dt>
 <dd>
-<div class="block">Compile Scala and Java sources</div>
+<div class="block">Compile Scala and Java main sources.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/plugin/SBTCompileMojo.html#SBTCompileMojo--">SBTCompileMojo()</a></span> - Constructor for class com.google.code.sbt.compiler.plugin.<a href="com/google/code/sbt/compiler/plugin/SBTCompileMojo.html" title="class in com.google.code.sbt.compiler.plugin">SBTCompileMojo</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/google/code/sbt/compiler/plugin/SBTTestCompileMojo.html" title="class in com.google.code.sbt.compiler.plugin"><span class="typeNameLink">SBTTestCompileMojo</span></a> - Class in <a href="com/google/code/sbt/compiler/plugin/package-summary.html">com.google.code.sbt.compiler.plugin</a></dt>
 <dd>
-<div class="block">Compile Scala and Java test sources</div>
+<div class="block">Compile Scala and Java test sources.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/plugin/SBTTestCompileMojo.html#SBTTestCompileMojo--">SBTTestCompileMojo()</a></span> - Constructor for class com.google.code.sbt.compiler.plugin.<a href="com/google/code/sbt/compiler/plugin/SBTTestCompileMojo.html" title="class in com.google.code.sbt.compiler.plugin">SBTTestCompileMojo</a></dt>
 <dd>&nbsp;</dd>
@@ -406,7 +406,7 @@
 <dd>
 <div class="block">Forced Scala version.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/plugin/SourcePositionMapperAggregator.html#setCharsetName-java.lang.String-">setCharsetName(String)</a></span> - Method in class com.google.code.sbt.compiler.plugin.<a href="com/google/code/sbt/compiler/plugin/SourcePositionMapperAggregator.html" title="class in com.google.code.sbt.compiler.plugin">SourcePositionMapperAggregator</a></dt>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/plugin/SourcePositionMapperCollection.html#setCharsetName-java.lang.String-">setCharsetName(String)</a></span> - Method in class com.google.code.sbt.compiler.plugin.<a href="com/google/code/sbt/compiler/plugin/SourcePositionMapperCollection.html" title="class in com.google.code.sbt.compiler.plugin">SourcePositionMapperCollection</a></dt>
 <dd>
 <div class="block">Sets source files character set name (encoding).</div>
 </dd>
@@ -422,13 +422,13 @@
 <dd>
 <div class="block">Scala and Java source files encoding.</div>
 </dd>
-<dt><a href="com/google/code/sbt/compiler/plugin/SourcePositionMapperAggregator.html" title="class in com.google.code.sbt.compiler.plugin"><span class="typeNameLink">SourcePositionMapperAggregator</span></a> - Class in <a href="com/google/code/sbt/compiler/plugin/package-summary.html">com.google.code.sbt.compiler.plugin</a></dt>
+<dt><a href="com/google/code/sbt/compiler/plugin/SourcePositionMapperCollection.html" title="class in com.google.code.sbt.compiler.plugin"><span class="typeNameLink">SourcePositionMapperCollection</span></a> - Class in <a href="com/google/code/sbt/compiler/plugin/package-summary.html">com.google.code.sbt.compiler.plugin</a></dt>
 <dd>
-<div class="block">...</div>
+<div class="block">Wwrapper for a collection of source position mappers.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/plugin/SourcePositionMapperAggregator.html#SourcePositionMapperAggregator-java.util.Collection-">SourcePositionMapperAggregator(Collection&lt;SourcePositionMapper&gt;)</a></span> - Constructor for class com.google.code.sbt.compiler.plugin.<a href="com/google/code/sbt/compiler/plugin/SourcePositionMapperAggregator.html" title="class in com.google.code.sbt.compiler.plugin">SourcePositionMapperAggregator</a></dt>
+<dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/plugin/SourcePositionMapperCollection.html#SourcePositionMapperCollection-java.util.Collection-">SourcePositionMapperCollection(Collection&lt;SourcePositionMapper&gt;)</a></span> - Constructor for class com.google.code.sbt.compiler.plugin.<a href="com/google/code/sbt/compiler/plugin/SourcePositionMapperCollection.html" title="class in com.google.code.sbt.compiler.plugin">SourcePositionMapperCollection</a></dt>
 <dd>
-<div class="block">Creates source position mappers aggregator.</div>
+<div class="block">Creates source position mappers collection.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/google/code/sbt/compiler/plugin/AbstractSBTCompileMojo.html#sourcePositionMappers">sourcePositionMappers</a></span> - Variable in class com.google.code.sbt.compiler.plugin.<a href="com/google/code/sbt/compiler/plugin/AbstractSBTCompileMojo.html" title="class in com.google.code.sbt.compiler.plugin">AbstractSBTCompileMojo</a></dt>
 <dd>
